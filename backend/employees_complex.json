@@ -1,0 +1,4196 @@
+[
+  {
+    "employee_id": "EMP001",
+    "profile": {
+      "name": "Aarav Mehta",
+      "email": "aarav.mehta1@example.com",
+      "phone": "+91 98595739626",
+      "location": "Hyderabad",
+      "work_mode": "Hybrid"
+    },
+    "job": {
+      "designation": "UI/UX Designer",
+      "domain": "AI",
+      "department": "Design",
+      "employee_type": "Contract",
+      "salary_band": "B"
+    },
+    "manager": {
+      "name": "Ayush Rathi",
+      "email": "ayush.rathi@example.com"
+    },
+    "joining_date": "2024-10-13",
+    "status": "Active",
+    "skills": [
+      "TensorFlow",
+      "PyTorch",
+      "Python"
+    ],
+    "projects": [
+      {
+        "project_id": "P1003",
+        "name": "Project P1003",
+        "role": "UI/UX Designer",
+        "duration_months": 9
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP002",
+    "profile": {
+      "name": "Vihaan Sharma",
+      "email": "vihaan.sharma2@example.com",
+      "phone": "+91 98464299281",
+      "location": "Bangalore",
+      "work_mode": "WFH"
+    },
+    "job": {
+      "designation": "QA Engineer",
+      "domain": "Support",
+      "department": "Quality",
+      "employee_type": "Contract",
+      "salary_band": "A"
+    },
+    "manager": {
+      "name": "Ayush Khanna",
+      "email": "ayush.khanna@example.com"
+    },
+    "joining_date": "2024-11-15",
+    "status": "Active",
+    "skills": [
+      "Ticketing",
+      "Communication",
+      "SQL basics"
+    ],
+    "projects": [
+      {
+        "project_id": "P1006",
+        "name": "Project P1006",
+        "role": "QA Engineer",
+        "duration_months": 13
+      },
+      {
+        "project_id": "P1007",
+        "name": "Project P1007",
+        "role": "QA Engineer",
+        "duration_months": 9
+      },
+      {
+        "project_id": "P1008",
+        "name": "Project P1008",
+        "role": "QA Engineer",
+        "duration_months": 10
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP003",
+    "profile": {
+      "name": "Reyansh Gupta",
+      "email": "reyansh.gupta3@example.com",
+      "phone": "+91 98492719201",
+      "location": "Hyderabad",
+      "work_mode": "Hybrid"
+    },
+    "job": {
+      "designation": "DevOps Engineer",
+      "domain": "Support",
+      "department": "Platform",
+      "employee_type": "Intern",
+      "salary_band": "B"
+    },
+    "manager": {
+      "name": "Ayush Sharma",
+      "email": "ayush.sharma@example.com"
+    },
+    "joining_date": "2020-03-11",
+    "status": "Inactive",
+    "skills": [
+      "Ticketing",
+      "SQL basics",
+      "Communication"
+    ],
+    "projects": [
+      {
+        "project_id": "P1009",
+        "name": "Project P1009",
+        "role": "DevOps Engineer",
+        "duration_months": 8
+      },
+      {
+        "project_id": "P1010",
+        "name": "Project P1010",
+        "role": "DevOps Engineer",
+        "duration_months": 12
+      },
+      {
+        "project_id": "P1011",
+        "name": "Project P1011",
+        "role": "DevOps Engineer",
+        "duration_months": 3
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP004",
+    "profile": {
+      "name": "Krishna Patel",
+      "email": "krishna.patel4@example.com",
+      "phone": "+91 98424823407",
+      "location": "Remote",
+      "work_mode": "Hybrid"
+    },
+    "job": {
+      "designation": "DevOps Engineer",
+      "domain": "Data",
+      "department": "IT",
+      "employee_type": "Contract",
+      "salary_band": "C"
+    },
+    "manager": {
+      "name": "Krishna Rao",
+      "email": "krishna.rao@example.com"
+    },
+    "joining_date": "2022-09-25",
+    "status": "Active",
+    "skills": [
+      "PowerBI",
+      "SQL",
+      "ETL"
+    ],
+    "projects": [
+      {
+        "project_id": "P1012",
+        "name": "Project P1012",
+        "role": "DevOps Engineer",
+        "duration_months": 7
+      },
+      {
+        "project_id": "P1013",
+        "name": "Project P1013",
+        "role": "DevOps Engineer",
+        "duration_months": 10
+      },
+      {
+        "project_id": "P1014",
+        "name": "Project P1014",
+        "role": "DevOps Engineer",
+        "duration_months": 7
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP005",
+    "profile": {
+      "name": "Arjun Nair",
+      "email": "arjun.nair5@example.com",
+      "phone": "+91 98835511594",
+      "location": "Noida",
+      "work_mode": "Office"
+    },
+    "job": {
+      "designation": "Backend Engineer",
+      "domain": "DevOps",
+      "department": "Quality",
+      "employee_type": "FTE",
+      "salary_band": "B"
+    },
+    "manager": {
+      "name": "Shivansh Gupta",
+      "email": "shivansh.gupta@example.com"
+    },
+    "joining_date": "2020-01-25",
+    "status": "Inactive",
+    "skills": [
+      "AWS",
+      "Terraform",
+      "Docker"
+    ],
+    "projects": [
+      {
+        "project_id": "P1015",
+        "name": "Project P1015",
+        "role": "Backend Engineer",
+        "duration_months": 15
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP006",
+    "profile": {
+      "name": "Ayaan Rao",
+      "email": "ayaan.rao6@example.com",
+      "phone": "+91 98744695451",
+      "location": "Noida",
+      "work_mode": "Hybrid"
+    },
+    "job": {
+      "designation": "Software Engineer",
+      "domain": "Data",
+      "department": "Business",
+      "employee_type": "FTE",
+      "salary_band": "C"
+    },
+    "manager": {
+      "name": "Anay Malik",
+      "email": "anay.malik@example.com"
+    },
+    "joining_date": "2024-01-06",
+    "status": "Active",
+    "skills": [
+      "Pandas",
+      "PowerBI",
+      "SQL"
+    ],
+    "projects": [
+      {
+        "project_id": "P1018",
+        "name": "Project P1018",
+        "role": "Software Engineer",
+        "duration_months": 4
+      },
+      {
+        "project_id": "P1019",
+        "name": "Project P1019",
+        "role": "Software Engineer",
+        "duration_months": 12
+      },
+      {
+        "project_id": "P1020",
+        "name": "Project P1020",
+        "role": "Software Engineer",
+        "duration_months": 5
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP007",
+    "profile": {
+      "name": "Kabir Malik",
+      "email": "kabir.malik7@example.com",
+      "phone": "+91 98891012515",
+      "location": "Delhi",
+      "work_mode": "Office"
+    },
+    "job": {
+      "designation": "Product Manager",
+      "domain": "Fullstack",
+      "department": "Platform",
+      "employee_type": "FTE",
+      "salary_band": "B"
+    },
+    "manager": {
+      "name": "Advik Rathi",
+      "email": "advik.rathi@example.com"
+    },
+    "joining_date": "2022-07-06",
+    "status": "Active",
+    "skills": [
+      "MongoDB",
+      "TypeScript",
+      "Express"
+    ],
+    "projects": [
+      {
+        "project_id": "P1021",
+        "name": "Project P1021",
+        "role": "Product Manager",
+        "duration_months": 15
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP008",
+    "profile": {
+      "name": "Dev Kapoor",
+      "email": "dev.kapoor8@example.com",
+      "phone": "+91 98263164180",
+      "location": "Noida",
+      "work_mode": "Office"
+    },
+    "job": {
+      "designation": "UI/UX Designer",
+      "domain": "Mobile",
+      "department": "Product",
+      "employee_type": "Contract",
+      "salary_band": "C"
+    },
+    "manager": {
+      "name": "Anay Yadav",
+      "email": "anay.yadav@example.com"
+    },
+    "joining_date": "2018-09-25",
+    "status": "Active",
+    "skills": [
+      "React Native",
+      "Android",
+      "Flutter"
+    ],
+    "projects": [
+      {
+        "project_id": "P1024",
+        "name": "Project P1024",
+        "role": "UI/UX Designer",
+        "duration_months": 6
+      },
+      {
+        "project_id": "P1025",
+        "name": "Project P1025",
+        "role": "UI/UX Designer",
+        "duration_months": 14
+      },
+      {
+        "project_id": "P1026",
+        "name": "Project P1026",
+        "role": "UI/UX Designer",
+        "duration_months": 14
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP009",
+    "profile": {
+      "name": "Advik Jain",
+      "email": "advik.jain9@example.com",
+      "phone": "+91 98481619244",
+      "location": "Bangalore",
+      "work_mode": "Hybrid"
+    },
+    "job": {
+      "designation": "UI/UX Designer",
+      "domain": "DevOps",
+      "department": "Analytics",
+      "employee_type": "Contract",
+      "salary_band": "C"
+    },
+    "manager": {
+      "name": "Atharv Singh",
+      "email": "atharv.singh@example.com"
+    },
+    "joining_date": "2020-08-26",
+    "status": "Active",
+    "skills": [
+      "CI/CD",
+      "Docker",
+      "Terraform"
+    ],
+    "projects": [
+      {
+        "project_id": "P1027",
+        "name": "Project P1027",
+        "role": "UI/UX Designer",
+        "duration_months": 6
+      },
+      {
+        "project_id": "P1028",
+        "name": "Project P1028",
+        "role": "UI/UX Designer",
+        "duration_months": 17
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP010",
+    "profile": {
+      "name": "Arnav Rathi",
+      "email": "arnav.rathi10@example.com",
+      "phone": "+91 98134809999",
+      "location": "Chennai",
+      "work_mode": "Hybrid"
+    },
+    "job": {
+      "designation": "Product Manager",
+      "domain": "Data",
+      "department": "Product",
+      "employee_type": "FTE",
+      "salary_band": "A"
+    },
+    "manager": {
+      "name": "Rudra Yadav",
+      "email": "rudra.yadav@example.com"
+    },
+    "joining_date": "2022-12-22",
+    "status": "Inactive",
+    "skills": [
+      "ETL",
+      "SQL",
+      "Pandas"
+    ],
+    "projects": [
+      {
+        "project_id": "P1030",
+        "name": "Project P1030",
+        "role": "Product Manager",
+        "duration_months": 9
+      },
+      {
+        "project_id": "P1031",
+        "name": "Project P1031",
+        "role": "Product Manager",
+        "duration_months": 3
+      },
+      {
+        "project_id": "P1032",
+        "name": "Project P1032",
+        "role": "Product Manager",
+        "duration_months": 8
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP011",
+    "profile": {
+      "name": "Ishaan Singh",
+      "email": "ishaan.singh11@example.com",
+      "phone": "+91 98152970973",
+      "location": "Ahmedabad",
+      "work_mode": "Hybrid"
+    },
+    "job": {
+      "designation": "Mobile Developer",
+      "domain": "UI/UX",
+      "department": "Quality",
+      "employee_type": "Contract",
+      "salary_band": "C"
+    },
+    "manager": {
+      "name": "Ayush Ghosh",
+      "email": "ayush.ghosh@example.com"
+    },
+    "joining_date": "2019-02-05",
+    "status": "Active",
+    "skills": [
+      "Prototyping",
+      "Wireframing",
+      "Figma"
+    ],
+    "projects": [
+      {
+        "project_id": "P1033",
+        "name": "Project P1033",
+        "role": "Mobile Developer",
+        "duration_months": 3
+      },
+      {
+        "project_id": "P1034",
+        "name": "Project P1034",
+        "role": "Mobile Developer",
+        "duration_months": 18
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP012",
+    "profile": {
+      "name": "Shivansh Yadav",
+      "email": "shivansh.yadav12@example.com",
+      "phone": "+91 98495215877",
+      "location": "Hyderabad",
+      "work_mode": "Hybrid"
+    },
+    "job": {
+      "designation": "Data Analyst",
+      "domain": "Fullstack",
+      "department": "Infra",
+      "employee_type": "Contract",
+      "salary_band": "A"
+    },
+    "manager": {
+      "name": "Arjun Joshi",
+      "email": "arjun.joshi@example.com"
+    },
+    "joining_date": "2019-03-11",
+    "status": "Active",
+    "skills": [
+      "Express",
+      "MongoDB",
+      "React"
+    ],
+    "projects": [
+      {
+        "project_id": "P1036",
+        "name": "Project P1036",
+        "role": "Data Analyst",
+        "duration_months": 12
+      },
+      {
+        "project_id": "P1037",
+        "name": "Project P1037",
+        "role": "Data Analyst",
+        "duration_months": 9
+      },
+      {
+        "project_id": "P1038",
+        "name": "Project P1038",
+        "role": "Data Analyst",
+        "duration_months": 13
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP013",
+    "profile": {
+      "name": "Ayush Khanna",
+      "email": "ayush.khanna13@example.com",
+      "phone": "+91 98614568336",
+      "location": "Pune",
+      "work_mode": "Office"
+    },
+    "job": {
+      "designation": "Frontend Engineer",
+      "domain": "Backend",
+      "department": "Design",
+      "employee_type": "Intern",
+      "salary_band": "A"
+    },
+    "manager": {
+      "name": "Kabir Khanna",
+      "email": "kabir.khanna@example.com"
+    },
+    "joining_date": "2024-08-22",
+    "status": "Active",
+    "skills": [
+      "NodeJS",
+      "FastAPI",
+      "Java"
+    ],
+    "projects": [
+      {
+        "project_id": "P1039",
+        "name": "Project P1039",
+        "role": "Frontend Engineer",
+        "duration_months": 6
+      },
+      {
+        "project_id": "P1040",
+        "name": "Project P1040",
+        "role": "Frontend Engineer",
+        "duration_months": 7
+      },
+      {
+        "project_id": "P1041",
+        "name": "Project P1041",
+        "role": "Frontend Engineer",
+        "duration_months": 6
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP014",
+    "profile": {
+      "name": "Atharv Salve",
+      "email": "atharv.salve14@example.com",
+      "phone": "+91 98574714770",
+      "location": "Chennai",
+      "work_mode": "Office"
+    },
+    "job": {
+      "designation": "QA Engineer",
+      "domain": "Support",
+      "department": "Design",
+      "employee_type": "Intern",
+      "salary_band": "B"
+    },
+    "manager": {
+      "name": "Atharv Singh",
+      "email": "atharv.singh@example.com"
+    },
+    "joining_date": "2020-06-20",
+    "status": "Active",
+    "skills": [
+      "Ticketing",
+      "SQL basics",
+      "Communication"
+    ],
+    "projects": [
+      {
+        "project_id": "P1042",
+        "name": "Project P1042",
+        "role": "QA Engineer",
+        "duration_months": 9
+      },
+      {
+        "project_id": "P1043",
+        "name": "Project P1043",
+        "role": "QA Engineer",
+        "duration_months": 9
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP015",
+    "profile": {
+      "name": "Rudra Deshmukh",
+      "email": "rudra.deshmukh15@example.com",
+      "phone": "+91 98294889853",
+      "location": "Pune",
+      "work_mode": "Office"
+    },
+    "job": {
+      "designation": "Support Engineer",
+      "domain": "Frontend",
+      "department": "Design",
+      "employee_type": "Contract",
+      "salary_band": "C"
+    },
+    "manager": {
+      "name": "Ayaan Gupta",
+      "email": "ayaan.gupta@example.com"
+    },
+    "joining_date": "2021-10-18",
+    "status": "Active",
+    "skills": [
+      "TypeScript",
+      "CSS",
+      "HTML"
+    ],
+    "projects": [
+      {
+        "project_id": "P1045",
+        "name": "Project P1045",
+        "role": "Support Engineer",
+        "duration_months": 17
+      },
+      {
+        "project_id": "P1046",
+        "name": "Project P1046",
+        "role": "Support Engineer",
+        "duration_months": 9
+      },
+      {
+        "project_id": "P1047",
+        "name": "Project P1047",
+        "role": "Support Engineer",
+        "duration_months": 2
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP016",
+    "profile": {
+      "name": "Pranav Patil",
+      "email": "pranav.patil16@example.com",
+      "phone": "+91 98968847756",
+      "location": "Nagpur",
+      "work_mode": "Hybrid"
+    },
+    "job": {
+      "designation": "DevOps Engineer",
+      "domain": "Mobile",
+      "department": "Design",
+      "employee_type": "Intern",
+      "salary_band": "B"
+    },
+    "manager": {
+      "name": "Shivansh Singh",
+      "email": "shivansh.singh@example.com"
+    },
+    "joining_date": "2021-04-08",
+    "status": "Active",
+    "skills": [
+      "Flutter",
+      "React Native",
+      "Android"
+    ],
+    "projects": [
+      {
+        "project_id": "P1048",
+        "name": "Project P1048",
+        "role": "DevOps Engineer",
+        "duration_months": 7
+      },
+      {
+        "project_id": "P1049",
+        "name": "Project P1049",
+        "role": "DevOps Engineer",
+        "duration_months": 8
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP017",
+    "profile": {
+      "name": "Samar Kaur",
+      "email": "samar.kaur17@example.com",
+      "phone": "+91 98291122435",
+      "location": "Ahmedabad",
+      "work_mode": "Hybrid"
+    },
+    "job": {
+      "designation": "Software Engineer",
+      "domain": "Data",
+      "department": "Business",
+      "employee_type": "FTE",
+      "salary_band": "A"
+    },
+    "manager": {
+      "name": "Samar Jain",
+      "email": "samar.jain@example.com"
+    },
+    "joining_date": "2023-01-04",
+    "status": "Active",
+    "skills": [
+      "PowerBI",
+      "Pandas",
+      "ETL"
+    ],
+    "projects": [
+      {
+        "project_id": "P1051",
+        "name": "Project P1051",
+        "role": "Software Engineer",
+        "duration_months": 9
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP018",
+    "profile": {
+      "name": "Anay Joshi",
+      "email": "anay.joshi18@example.com",
+      "phone": "+91 98795545312",
+      "location": "Chennai",
+      "work_mode": "Office"
+    },
+    "job": {
+      "designation": "QA Engineer",
+      "domain": "Support",
+      "department": "Infra",
+      "employee_type": "FTE",
+      "salary_band": "C"
+    },
+    "manager": {
+      "name": "Arjun Deshmukh",
+      "email": "arjun.deshmukh@example.com"
+    },
+    "joining_date": "2024-01-06",
+    "status": "Inactive",
+    "skills": [
+      "SQL basics",
+      "Communication",
+      "Ticketing"
+    ],
+    "projects": [
+      {
+        "project_id": "P1054",
+        "name": "Project P1054",
+        "role": "QA Engineer",
+        "duration_months": 8
+      },
+      {
+        "project_id": "P1055",
+        "name": "Project P1055",
+        "role": "QA Engineer",
+        "duration_months": 18
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP019",
+    "profile": {
+      "name": "Yug Ghosh",
+      "email": "yug.ghosh19@example.com",
+      "phone": "+91 98338565511",
+      "location": "Remote",
+      "work_mode": "Office"
+    },
+    "job": {
+      "designation": "QA Engineer",
+      "domain": "Fullstack",
+      "department": "Product",
+      "employee_type": "FTE",
+      "salary_band": "C"
+    },
+    "manager": {
+      "name": "Arjun Gupta",
+      "email": "arjun.gupta@example.com"
+    },
+    "joining_date": "2024-02-16",
+    "status": "Inactive",
+    "skills": [
+      "Express",
+      "NodeJS",
+      "React"
+    ],
+    "projects": [
+      {
+        "project_id": "P1057",
+        "name": "Project P1057",
+        "role": "QA Engineer",
+        "duration_months": 16
+      },
+      {
+        "project_id": "P1058",
+        "name": "Project P1058",
+        "role": "QA Engineer",
+        "duration_months": 17
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP020",
+    "profile": {
+      "name": "Parth Shah",
+      "email": "parth.shah20@example.com",
+      "phone": "+91 98236615602",
+      "location": "Mumbai",
+      "work_mode": "Office"
+    },
+    "job": {
+      "designation": "Software Engineer",
+      "domain": "DevOps",
+      "department": "Ops",
+      "employee_type": "Contract",
+      "salary_band": "C"
+    },
+    "manager": {
+      "name": "Ayush Khanna",
+      "email": "ayush.khanna@example.com"
+    },
+    "joining_date": "2022-07-15",
+    "status": "Active",
+    "skills": [
+      "AWS",
+      "Terraform",
+      "CI/CD"
+    ],
+    "projects": [
+      {
+        "project_id": "P1060",
+        "name": "Project P1060",
+        "role": "Software Engineer",
+        "duration_months": 13
+      },
+      {
+        "project_id": "P1061",
+        "name": "Project P1061",
+        "role": "Software Engineer",
+        "duration_months": 13
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP021",
+    "profile": {
+      "name": "Aarav Mehta",
+      "email": "aarav.mehta21@example.com",
+      "phone": "+91 98476891581",
+      "location": "Chennai",
+      "work_mode": "Hybrid"
+    },
+    "job": {
+      "designation": "Backend Engineer",
+      "domain": "Frontend",
+      "department": "Ops",
+      "employee_type": "Intern",
+      "salary_band": "A"
+    },
+    "manager": {
+      "name": "Vihaan Patel",
+      "email": "vihaan.patel@example.com"
+    },
+    "joining_date": "2023-01-09",
+    "status": "Active",
+    "skills": [
+      "HTML",
+      "React",
+      "CSS"
+    ],
+    "projects": [
+      {
+        "project_id": "P1063",
+        "name": "Project P1063",
+        "role": "Backend Engineer",
+        "duration_months": 2
+      },
+      {
+        "project_id": "P1064",
+        "name": "Project P1064",
+        "role": "Backend Engineer",
+        "duration_months": 15
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP022",
+    "profile": {
+      "name": "Vihaan Sharma",
+      "email": "vihaan.sharma22@example.com",
+      "phone": "+91 98514780116",
+      "location": "Bangalore",
+      "work_mode": "Hybrid"
+    },
+    "job": {
+      "designation": "UI/UX Designer",
+      "domain": "Backend",
+      "department": "Product",
+      "employee_type": "Intern",
+      "salary_band": "B"
+    },
+    "manager": {
+      "name": "Arnav Patil",
+      "email": "arnav.patil@example.com"
+    },
+    "joining_date": "2022-02-05",
+    "status": "Active",
+    "skills": [
+      "Spring",
+      "Python",
+      "FastAPI"
+    ],
+    "projects": [
+      {
+        "project_id": "P1066",
+        "name": "Project P1066",
+        "role": "UI/UX Designer",
+        "duration_months": 5
+      },
+      {
+        "project_id": "P1067",
+        "name": "Project P1067",
+        "role": "UI/UX Designer",
+        "duration_months": 3
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP023",
+    "profile": {
+      "name": "Reyansh Gupta",
+      "email": "reyansh.gupta23@example.com",
+      "phone": "+91 98619961878",
+      "location": "Bangalore",
+      "work_mode": "Hybrid"
+    },
+    "job": {
+      "designation": "UI/UX Designer",
+      "domain": "Fullstack",
+      "department": "IT",
+      "employee_type": "FTE",
+      "salary_band": "C"
+    },
+    "manager": {
+      "name": "Aarav Shah",
+      "email": "aarav.shah@example.com"
+    },
+    "joining_date": "2022-12-17",
+    "status": "Active",
+    "skills": [
+      "Express",
+      "NodeJS",
+      "TypeScript"
+    ],
+    "projects": [
+      {
+        "project_id": "P1069",
+        "name": "Project P1069",
+        "role": "UI/UX Designer",
+        "duration_months": 2
+      },
+      {
+        "project_id": "P1070",
+        "name": "Project P1070",
+        "role": "UI/UX Designer",
+        "duration_months": 18
+      },
+      {
+        "project_id": "P1071",
+        "name": "Project P1071",
+        "role": "UI/UX Designer",
+        "duration_months": 11
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP024",
+    "profile": {
+      "name": "Krishna Patel",
+      "email": "krishna.patel24@example.com",
+      "phone": "+91 98661983734",
+      "location": "Chennai",
+      "work_mode": "Office"
+    },
+    "job": {
+      "designation": "DevOps Engineer",
+      "domain": "Data",
+      "department": "Quality",
+      "employee_type": "FTE",
+      "salary_band": "C"
+    },
+    "manager": {
+      "name": "Rudra Salve",
+      "email": "rudra.salve@example.com"
+    },
+    "joining_date": "2018-04-18",
+    "status": "Active",
+    "skills": [
+      "PowerBI",
+      "Pandas",
+      "ETL"
+    ],
+    "projects": [
+      {
+        "project_id": "P1072",
+        "name": "Project P1072",
+        "role": "DevOps Engineer",
+        "duration_months": 9
+      },
+      {
+        "project_id": "P1073",
+        "name": "Project P1073",
+        "role": "DevOps Engineer",
+        "duration_months": 6
+      },
+      {
+        "project_id": "P1074",
+        "name": "Project P1074",
+        "role": "DevOps Engineer",
+        "duration_months": 2
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP025",
+    "profile": {
+      "name": "Arjun Nair",
+      "email": "arjun.nair25@example.com",
+      "phone": "+91 98504586401",
+      "location": "Nagpur",
+      "work_mode": "Hybrid"
+    },
+    "job": {
+      "designation": "UI/UX Designer",
+      "domain": "Backend",
+      "department": "Business",
+      "employee_type": "Contract",
+      "salary_band": "A"
+    },
+    "manager": {
+      "name": "Reyansh Singh",
+      "email": "reyansh.singh@example.com"
+    },
+    "joining_date": "2023-03-15",
+    "status": "Active",
+    "skills": [
+      "Python",
+      "Spring",
+      "Django"
+    ],
+    "projects": [
+      {
+        "project_id": "P1075",
+        "name": "Project P1075",
+        "role": "UI/UX Designer",
+        "duration_months": 11
+      },
+      {
+        "project_id": "P1076",
+        "name": "Project P1076",
+        "role": "UI/UX Designer",
+        "duration_months": 15
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP026",
+    "profile": {
+      "name": "Ayaan Rao",
+      "email": "ayaan.rao26@example.com",
+      "phone": "+91 98125669377",
+      "location": "Pune",
+      "work_mode": "Office"
+    },
+    "job": {
+      "designation": "Frontend Engineer",
+      "domain": "Data",
+      "department": "Product",
+      "employee_type": "Contract",
+      "salary_band": "A"
+    },
+    "manager": {
+      "name": "Kabir Mehta",
+      "email": "kabir.mehta@example.com"
+    },
+    "joining_date": "2023-12-24",
+    "status": "Active",
+    "skills": [
+      "SQL",
+      "PowerBI",
+      "Pandas"
+    ],
+    "projects": [
+      {
+        "project_id": "P1078",
+        "name": "Project P1078",
+        "role": "Frontend Engineer",
+        "duration_months": 14
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP027",
+    "profile": {
+      "name": "Kabir Malik",
+      "email": "kabir.malik27@example.com",
+      "phone": "+91 98626899331",
+      "location": "Mumbai",
+      "work_mode": "Hybrid"
+    },
+    "job": {
+      "designation": "Support Engineer",
+      "domain": "DevOps",
+      "department": "IT",
+      "employee_type": "Contract",
+      "salary_band": "B"
+    },
+    "manager": {
+      "name": "Rudra Kaur",
+      "email": "rudra.kaur@example.com"
+    },
+    "joining_date": "2018-02-28",
+    "status": "Inactive",
+    "skills": [
+      "AWS",
+      "Terraform",
+      "CI/CD"
+    ],
+    "projects": [
+      {
+        "project_id": "P1081",
+        "name": "Project P1081",
+        "role": "Support Engineer",
+        "duration_months": 9
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP028",
+    "profile": {
+      "name": "Dev Kapoor",
+      "email": "dev.kapoor28@example.com",
+      "phone": "+91 98811115496",
+      "location": "Delhi",
+      "work_mode": "WFH"
+    },
+    "job": {
+      "designation": "Software Engineer",
+      "domain": "DevOps",
+      "department": "Infra",
+      "employee_type": "Contract",
+      "salary_band": "A"
+    },
+    "manager": {
+      "name": "Krishna Rao",
+      "email": "krishna.rao@example.com"
+    },
+    "joining_date": "2019-01-05",
+    "status": "Active",
+    "skills": [
+      "Kubernetes",
+      "CI/CD",
+      "Terraform"
+    ],
+    "projects": [
+      {
+        "project_id": "P1084",
+        "name": "Project P1084",
+        "role": "Software Engineer",
+        "duration_months": 10
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP029",
+    "profile": {
+      "name": "Advik Jain",
+      "email": "advik.jain29@example.com",
+      "phone": "+91 98918993516",
+      "location": "Hyderabad",
+      "work_mode": "Office"
+    },
+    "job": {
+      "designation": "Software Engineer",
+      "domain": "DevOps",
+      "department": "Product",
+      "employee_type": "FTE",
+      "salary_band": "A"
+    },
+    "manager": {
+      "name": "Pranav Joshi",
+      "email": "pranav.joshi@example.com"
+    },
+    "joining_date": "2018-03-03",
+    "status": "Active",
+    "skills": [
+      "AWS",
+      "Kubernetes",
+      "Docker"
+    ],
+    "projects": [
+      {
+        "project_id": "P1087",
+        "name": "Project P1087",
+        "role": "Software Engineer",
+        "duration_months": 4
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP030",
+    "profile": {
+      "name": "Arnav Rathi",
+      "email": "arnav.rathi30@example.com",
+      "phone": "+91 98514712755",
+      "location": "Hyderabad",
+      "work_mode": "Hybrid"
+    },
+    "job": {
+      "designation": "Frontend Engineer",
+      "domain": "Fullstack",
+      "department": "Product",
+      "employee_type": "Intern",
+      "salary_band": "A"
+    },
+    "manager": {
+      "name": "Advik Sharma",
+      "email": "advik.sharma@example.com"
+    },
+    "joining_date": "2021-04-09",
+    "status": "Active",
+    "skills": [
+      "MongoDB",
+      "TypeScript",
+      "React"
+    ],
+    "projects": [
+      {
+        "project_id": "P1090",
+        "name": "Project P1090",
+        "role": "Frontend Engineer",
+        "duration_months": 8
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP031",
+    "profile": {
+      "name": "Ishaan Singh",
+      "email": "ishaan.singh31@example.com",
+      "phone": "+91 98687457425",
+      "location": "Nagpur",
+      "work_mode": "Office"
+    },
+    "job": {
+      "designation": "Backend Engineer",
+      "domain": "Backend",
+      "department": "Analytics",
+      "employee_type": "FTE",
+      "salary_band": "C"
+    },
+    "manager": {
+      "name": "Shivansh Yadav",
+      "email": "shivansh.yadav@example.com"
+    },
+    "joining_date": "2021-02-27",
+    "status": "Active",
+    "skills": [
+      "Spring",
+      "Java",
+      "NodeJS"
+    ],
+    "projects": [
+      {
+        "project_id": "P1093",
+        "name": "Project P1093",
+        "role": "Backend Engineer",
+        "duration_months": 4
+      },
+      {
+        "project_id": "P1094",
+        "name": "Project P1094",
+        "role": "Backend Engineer",
+        "duration_months": 8
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP032",
+    "profile": {
+      "name": "Shivansh Yadav",
+      "email": "shivansh.yadav32@example.com",
+      "phone": "+91 98293679542",
+      "location": "Noida",
+      "work_mode": "Office"
+    },
+    "job": {
+      "designation": "Backend Engineer",
+      "domain": "Frontend",
+      "department": "Infra",
+      "employee_type": "FTE",
+      "salary_band": "A"
+    },
+    "manager": {
+      "name": "Arnav Kaur",
+      "email": "arnav.kaur@example.com"
+    },
+    "joining_date": "2021-07-01",
+    "status": "Active",
+    "skills": [
+      "Tailwind",
+      "CSS",
+      "HTML"
+    ],
+    "projects": [
+      {
+        "project_id": "P1096",
+        "name": "Project P1096",
+        "role": "Backend Engineer",
+        "duration_months": 13
+      },
+      {
+        "project_id": "P1097",
+        "name": "Project P1097",
+        "role": "Backend Engineer",
+        "duration_months": 9
+      },
+      {
+        "project_id": "P1098",
+        "name": "Project P1098",
+        "role": "Backend Engineer",
+        "duration_months": 16
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP033",
+    "profile": {
+      "name": "Ayush Khanna",
+      "email": "ayush.khanna33@example.com",
+      "phone": "+91 98505888830",
+      "location": "Mumbai",
+      "work_mode": "Hybrid"
+    },
+    "job": {
+      "designation": "UI/UX Designer",
+      "domain": "AI",
+      "department": "Design",
+      "employee_type": "FTE",
+      "salary_band": "B"
+    },
+    "manager": {
+      "name": "Advik Nair",
+      "email": "advik.nair@example.com"
+    },
+    "joining_date": "2023-08-27",
+    "status": "Active",
+    "skills": [
+      "Python",
+      "LLMs",
+      "PyTorch"
+    ],
+    "projects": [
+      {
+        "project_id": "P1099",
+        "name": "Project P1099",
+        "role": "UI/UX Designer",
+        "duration_months": 8
+      },
+      {
+        "project_id": "P1100",
+        "name": "Project P1100",
+        "role": "UI/UX Designer",
+        "duration_months": 2
+      },
+      {
+        "project_id": "P1101",
+        "name": "Project P1101",
+        "role": "UI/UX Designer",
+        "duration_months": 9
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP034",
+    "profile": {
+      "name": "Atharv Salve",
+      "email": "atharv.salve34@example.com",
+      "phone": "+91 98674806286",
+      "location": "Bangalore",
+      "work_mode": "Hybrid"
+    },
+    "job": {
+      "designation": "QA Engineer",
+      "domain": "Backend",
+      "department": "Design",
+      "employee_type": "FTE",
+      "salary_band": "C"
+    },
+    "manager": {
+      "name": "Arjun Singh",
+      "email": "arjun.singh@example.com"
+    },
+    "joining_date": "2018-01-06",
+    "status": "Active",
+    "skills": [
+      "Java",
+      "Django",
+      "NodeJS"
+    ],
+    "projects": [
+      {
+        "project_id": "P1102",
+        "name": "Project P1102",
+        "role": "QA Engineer",
+        "duration_months": 17
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP035",
+    "profile": {
+      "name": "Rudra Deshmukh",
+      "email": "rudra.deshmukh35@example.com",
+      "phone": "+91 98674057521",
+      "location": "Remote",
+      "work_mode": "WFH"
+    },
+    "job": {
+      "designation": "UI/UX Designer",
+      "domain": "Mobile",
+      "department": "Product",
+      "employee_type": "FTE",
+      "salary_band": "C"
+    },
+    "manager": {
+      "name": "Atharv Salve",
+      "email": "atharv.salve@example.com"
+    },
+    "joining_date": "2022-04-24",
+    "status": "Active",
+    "skills": [
+      "React Native",
+      "Android",
+      "Flutter"
+    ],
+    "projects": [
+      {
+        "project_id": "P1105",
+        "name": "Project P1105",
+        "role": "UI/UX Designer",
+        "duration_months": 4
+      },
+      {
+        "project_id": "P1106",
+        "name": "Project P1106",
+        "role": "UI/UX Designer",
+        "duration_months": 13
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP036",
+    "profile": {
+      "name": "Pranav Patil",
+      "email": "pranav.patil36@example.com",
+      "phone": "+91 98779313579",
+      "location": "Nagpur",
+      "work_mode": "Office"
+    },
+    "job": {
+      "designation": "Product Manager",
+      "domain": "AI",
+      "department": "IT",
+      "employee_type": "Intern",
+      "salary_band": "A"
+    },
+    "manager": {
+      "name": "Ishaan Patil",
+      "email": "ishaan.patil@example.com"
+    },
+    "joining_date": "2020-08-19",
+    "status": "Active",
+    "skills": [
+      "PyTorch",
+      "Python",
+      "LLMs"
+    ],
+    "projects": [
+      {
+        "project_id": "P1108",
+        "name": "Project P1108",
+        "role": "Product Manager",
+        "duration_months": 2
+      },
+      {
+        "project_id": "P1109",
+        "name": "Project P1109",
+        "role": "Product Manager",
+        "duration_months": 8
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP037",
+    "profile": {
+      "name": "Samar Kaur",
+      "email": "samar.kaur37@example.com",
+      "phone": "+91 98746443967",
+      "location": "Hyderabad",
+      "work_mode": "Hybrid"
+    },
+    "job": {
+      "designation": "Software Engineer",
+      "domain": "Support",
+      "department": "Product",
+      "employee_type": "FTE",
+      "salary_band": "A"
+    },
+    "manager": {
+      "name": "Ayush Jain",
+      "email": "ayush.jain@example.com"
+    },
+    "joining_date": "2023-11-27",
+    "status": "Active",
+    "skills": [
+      "Communication",
+      "SQL basics",
+      "Ticketing"
+    ],
+    "projects": [
+      {
+        "project_id": "P1111",
+        "name": "Project P1111",
+        "role": "Software Engineer",
+        "duration_months": 5
+      },
+      {
+        "project_id": "P1112",
+        "name": "Project P1112",
+        "role": "Software Engineer",
+        "duration_months": 6
+      },
+      {
+        "project_id": "P1113",
+        "name": "Project P1113",
+        "role": "Software Engineer",
+        "duration_months": 11
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP038",
+    "profile": {
+      "name": "Anay Joshi",
+      "email": "anay.joshi38@example.com",
+      "phone": "+91 98424926484",
+      "location": "Delhi",
+      "work_mode": "WFH"
+    },
+    "job": {
+      "designation": "QA Engineer",
+      "domain": "UI/UX",
+      "department": "Infra",
+      "employee_type": "Contract",
+      "salary_band": "B"
+    },
+    "manager": {
+      "name": "Pranav Jain",
+      "email": "pranav.jain@example.com"
+    },
+    "joining_date": "2024-01-07",
+    "status": "Active",
+    "skills": [
+      "Prototyping",
+      "Wireframing",
+      "Figma"
+    ],
+    "projects": [
+      {
+        "project_id": "P1114",
+        "name": "Project P1114",
+        "role": "QA Engineer",
+        "duration_months": 18
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP039",
+    "profile": {
+      "name": "Yug Ghosh",
+      "email": "yug.ghosh39@example.com",
+      "phone": "+91 98125807936",
+      "location": "Remote",
+      "work_mode": "WFH"
+    },
+    "job": {
+      "designation": "Data Analyst",
+      "domain": "DevOps",
+      "department": "IT",
+      "employee_type": "FTE",
+      "salary_band": "C"
+    },
+    "manager": {
+      "name": "Atharv Deshmukh",
+      "email": "atharv.deshmukh@example.com"
+    },
+    "joining_date": "2018-03-26",
+    "status": "Active",
+    "skills": [
+      "Docker",
+      "CI/CD",
+      "Kubernetes"
+    ],
+    "projects": [
+      {
+        "project_id": "P1117",
+        "name": "Project P1117",
+        "role": "Data Analyst",
+        "duration_months": 4
+      },
+      {
+        "project_id": "P1118",
+        "name": "Project P1118",
+        "role": "Data Analyst",
+        "duration_months": 2
+      },
+      {
+        "project_id": "P1119",
+        "name": "Project P1119",
+        "role": "Data Analyst",
+        "duration_months": 15
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP040",
+    "profile": {
+      "name": "Parth Shah",
+      "email": "parth.shah40@example.com",
+      "phone": "+91 98359641670",
+      "location": "Mumbai",
+      "work_mode": "Office"
+    },
+    "job": {
+      "designation": "Data Analyst",
+      "domain": "DevOps",
+      "department": "Infra",
+      "employee_type": "Intern",
+      "salary_band": "C"
+    },
+    "manager": {
+      "name": "Shivansh Jain",
+      "email": "shivansh.jain@example.com"
+    },
+    "joining_date": "2020-04-22",
+    "status": "Inactive",
+    "skills": [
+      "CI/CD",
+      "Docker",
+      "AWS"
+    ],
+    "projects": [
+      {
+        "project_id": "P1120",
+        "name": "Project P1120",
+        "role": "Data Analyst",
+        "duration_months": 15
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP041",
+    "profile": {
+      "name": "Aarav Mehta",
+      "email": "aarav.mehta41@example.com",
+      "phone": "+91 98873059154",
+      "location": "Nagpur",
+      "work_mode": "Hybrid"
+    },
+    "job": {
+      "designation": "Frontend Engineer",
+      "domain": "Testing",
+      "department": "Business",
+      "employee_type": "Contract",
+      "salary_band": "C"
+    },
+    "manager": {
+      "name": "Arjun Patel",
+      "email": "arjun.patel@example.com"
+    },
+    "joining_date": "2020-01-24",
+    "status": "Active",
+    "skills": [
+      "Pytest",
+      "Postman",
+      "JMeter"
+    ],
+    "projects": [
+      {
+        "project_id": "P1123",
+        "name": "Project P1123",
+        "role": "Frontend Engineer",
+        "duration_months": 13
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP042",
+    "profile": {
+      "name": "Vihaan Sharma",
+      "email": "vihaan.sharma42@example.com",
+      "phone": "+91 98816477796",
+      "location": "Mumbai",
+      "work_mode": "Office"
+    },
+    "job": {
+      "designation": "Backend Engineer",
+      "domain": "Support",
+      "department": "Design",
+      "employee_type": "FTE",
+      "salary_band": "A"
+    },
+    "manager": {
+      "name": "Atharv Joshi",
+      "email": "atharv.joshi@example.com"
+    },
+    "joining_date": "2024-02-06",
+    "status": "Active",
+    "skills": [
+      "SQL basics",
+      "Communication",
+      "Ticketing"
+    ],
+    "projects": [
+      {
+        "project_id": "P1126",
+        "name": "Project P1126",
+        "role": "Backend Engineer",
+        "duration_months": 8
+      },
+      {
+        "project_id": "P1127",
+        "name": "Project P1127",
+        "role": "Backend Engineer",
+        "duration_months": 9
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP043",
+    "profile": {
+      "name": "Reyansh Gupta",
+      "email": "reyansh.gupta43@example.com",
+      "phone": "+91 98926650595",
+      "location": "Noida",
+      "work_mode": "WFH"
+    },
+    "job": {
+      "designation": "QA Engineer",
+      "domain": "Testing",
+      "department": "Ops",
+      "employee_type": "Contract",
+      "salary_band": "B"
+    },
+    "manager": {
+      "name": "Shivansh Yadav",
+      "email": "shivansh.yadav@example.com"
+    },
+    "joining_date": "2023-02-15",
+    "status": "Active",
+    "skills": [
+      "JMeter",
+      "Postman",
+      "Selenium"
+    ],
+    "projects": [
+      {
+        "project_id": "P1129",
+        "name": "Project P1129",
+        "role": "QA Engineer",
+        "duration_months": 16
+      },
+      {
+        "project_id": "P1130",
+        "name": "Project P1130",
+        "role": "QA Engineer",
+        "duration_months": 17
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP044",
+    "profile": {
+      "name": "Krishna Patel",
+      "email": "krishna.patel44@example.com",
+      "phone": "+91 98934047723",
+      "location": "Ahmedabad",
+      "work_mode": "Office"
+    },
+    "job": {
+      "designation": "DevOps Engineer",
+      "domain": "Backend",
+      "department": "Design",
+      "employee_type": "FTE",
+      "salary_band": "A"
+    },
+    "manager": {
+      "name": "Advik Deshmukh",
+      "email": "advik.deshmukh@example.com"
+    },
+    "joining_date": "2021-10-24",
+    "status": "Active",
+    "skills": [
+      "Python",
+      "Java",
+      "Spring"
+    ],
+    "projects": [
+      {
+        "project_id": "P1132",
+        "name": "Project P1132",
+        "role": "DevOps Engineer",
+        "duration_months": 13
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP045",
+    "profile": {
+      "name": "Arjun Nair",
+      "email": "arjun.nair45@example.com",
+      "phone": "+91 98741533566",
+      "location": "Bangalore",
+      "work_mode": "Office"
+    },
+    "job": {
+      "designation": "Support Engineer",
+      "domain": "AI",
+      "department": "Design",
+      "employee_type": "FTE",
+      "salary_band": "A"
+    },
+    "manager": {
+      "name": "Vihaan Mehta",
+      "email": "vihaan.mehta@example.com"
+    },
+    "joining_date": "2022-12-24",
+    "status": "Active",
+    "skills": [
+      "LLMs",
+      "Python",
+      "PyTorch"
+    ],
+    "projects": [
+      {
+        "project_id": "P1135",
+        "name": "Project P1135",
+        "role": "Support Engineer",
+        "duration_months": 12
+      },
+      {
+        "project_id": "P1136",
+        "name": "Project P1136",
+        "role": "Support Engineer",
+        "duration_months": 14
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP046",
+    "profile": {
+      "name": "Ayaan Rao",
+      "email": "ayaan.rao46@example.com",
+      "phone": "+91 98779453457",
+      "location": "Bangalore",
+      "work_mode": "Hybrid"
+    },
+    "job": {
+      "designation": "Data Analyst",
+      "domain": "Data",
+      "department": "Platform",
+      "employee_type": "FTE",
+      "salary_band": "B"
+    },
+    "manager": {
+      "name": "Ishaan Patel",
+      "email": "ishaan.patel@example.com"
+    },
+    "joining_date": "2019-02-06",
+    "status": "Active",
+    "skills": [
+      "SQL",
+      "PowerBI",
+      "ETL"
+    ],
+    "projects": [
+      {
+        "project_id": "P1138",
+        "name": "Project P1138",
+        "role": "Data Analyst",
+        "duration_months": 11
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP047",
+    "profile": {
+      "name": "Kabir Malik",
+      "email": "kabir.malik47@example.com",
+      "phone": "+91 98706475984",
+      "location": "Pune",
+      "work_mode": "WFH"
+    },
+    "job": {
+      "designation": "UI/UX Designer",
+      "domain": "Backend",
+      "department": "Ops",
+      "employee_type": "Contract",
+      "salary_band": "A"
+    },
+    "manager": {
+      "name": "Vihaan Rathi",
+      "email": "vihaan.rathi@example.com"
+    },
+    "joining_date": "2020-08-21",
+    "status": "Active",
+    "skills": [
+      "Django",
+      "Python",
+      "NodeJS"
+    ],
+    "projects": [
+      {
+        "project_id": "P1141",
+        "name": "Project P1141",
+        "role": "UI/UX Designer",
+        "duration_months": 8
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP048",
+    "profile": {
+      "name": "Dev Kapoor",
+      "email": "dev.kapoor48@example.com",
+      "phone": "+91 98366036891",
+      "location": "Chennai",
+      "work_mode": "WFH"
+    },
+    "job": {
+      "designation": "Data Analyst",
+      "domain": "Backend",
+      "department": "Design",
+      "employee_type": "Contract",
+      "salary_band": "A"
+    },
+    "manager": {
+      "name": "Ishaan Jain",
+      "email": "ishaan.jain@example.com"
+    },
+    "joining_date": "2019-07-23",
+    "status": "Active",
+    "skills": [
+      "FastAPI",
+      "Django",
+      "Spring"
+    ],
+    "projects": [
+      {
+        "project_id": "P1144",
+        "name": "Project P1144",
+        "role": "Data Analyst",
+        "duration_months": 4
+      },
+      {
+        "project_id": "P1145",
+        "name": "Project P1145",
+        "role": "Data Analyst",
+        "duration_months": 9
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP049",
+    "profile": {
+      "name": "Advik Jain",
+      "email": "advik.jain49@example.com",
+      "phone": "+91 98415499407",
+      "location": "Noida",
+      "work_mode": "Office"
+    },
+    "job": {
+      "designation": "UI/UX Designer",
+      "domain": "UI/UX",
+      "department": "Business",
+      "employee_type": "FTE",
+      "salary_band": "B"
+    },
+    "manager": {
+      "name": "Pranav Singh",
+      "email": "pranav.singh@example.com"
+    },
+    "joining_date": "2018-10-08",
+    "status": "Active",
+    "skills": [
+      "Prototyping",
+      "Wireframing",
+      "Figma"
+    ],
+    "projects": [
+      {
+        "project_id": "P1147",
+        "name": "Project P1147",
+        "role": "UI/UX Designer",
+        "duration_months": 5
+      },
+      {
+        "project_id": "P1148",
+        "name": "Project P1148",
+        "role": "UI/UX Designer",
+        "duration_months": 16
+      },
+      {
+        "project_id": "P1149",
+        "name": "Project P1149",
+        "role": "UI/UX Designer",
+        "duration_months": 15
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP050",
+    "profile": {
+      "name": "Arnav Rathi",
+      "email": "arnav.rathi50@example.com",
+      "phone": "+91 98712540763",
+      "location": "Noida",
+      "work_mode": "WFH"
+    },
+    "job": {
+      "designation": "Backend Engineer",
+      "domain": "DevOps",
+      "department": "Research",
+      "employee_type": "FTE",
+      "salary_band": "B"
+    },
+    "manager": {
+      "name": "Parth Patel",
+      "email": "parth.patel@example.com"
+    },
+    "joining_date": "2021-03-22",
+    "status": "Active",
+    "skills": [
+      "Terraform",
+      "CI/CD",
+      "AWS"
+    ],
+    "projects": [
+      {
+        "project_id": "P1150",
+        "name": "Project P1150",
+        "role": "Backend Engineer",
+        "duration_months": 17
+      },
+      {
+        "project_id": "P1151",
+        "name": "Project P1151",
+        "role": "Backend Engineer",
+        "duration_months": 6
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP051",
+    "profile": {
+      "name": "Ishaan Singh",
+      "email": "ishaan.singh51@example.com",
+      "phone": "+91 98534973217",
+      "location": "Pune",
+      "work_mode": "Hybrid"
+    },
+    "job": {
+      "designation": "Backend Engineer",
+      "domain": "AI",
+      "department": "IT",
+      "employee_type": "Contract",
+      "salary_band": "A"
+    },
+    "manager": {
+      "name": "Samar Salve",
+      "email": "samar.salve@example.com"
+    },
+    "joining_date": "2024-04-01",
+    "status": "Active",
+    "skills": [
+      "PyTorch",
+      "TensorFlow",
+      "LLMs"
+    ],
+    "projects": [
+      {
+        "project_id": "P1153",
+        "name": "Project P1153",
+        "role": "Backend Engineer",
+        "duration_months": 17
+      },
+      {
+        "project_id": "P1154",
+        "name": "Project P1154",
+        "role": "Backend Engineer",
+        "duration_months": 9
+      },
+      {
+        "project_id": "P1155",
+        "name": "Project P1155",
+        "role": "Backend Engineer",
+        "duration_months": 9
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP052",
+    "profile": {
+      "name": "Shivansh Yadav",
+      "email": "shivansh.yadav52@example.com",
+      "phone": "+91 98202968765",
+      "location": "Remote",
+      "work_mode": "Office"
+    },
+    "job": {
+      "designation": "Backend Engineer",
+      "domain": "Testing",
+      "department": "Business",
+      "employee_type": "Intern",
+      "salary_band": "C"
+    },
+    "manager": {
+      "name": "Vihaan Deshmukh",
+      "email": "vihaan.deshmukh@example.com"
+    },
+    "joining_date": "2022-05-19",
+    "status": "Inactive",
+    "skills": [
+      "JMeter",
+      "Selenium",
+      "Pytest"
+    ],
+    "projects": [
+      {
+        "project_id": "P1156",
+        "name": "Project P1156",
+        "role": "Backend Engineer",
+        "duration_months": 16
+      },
+      {
+        "project_id": "P1157",
+        "name": "Project P1157",
+        "role": "Backend Engineer",
+        "duration_months": 5
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP053",
+    "profile": {
+      "name": "Ayush Khanna",
+      "email": "ayush.khanna53@example.com",
+      "phone": "+91 98348683607",
+      "location": "Nagpur",
+      "work_mode": "Office"
+    },
+    "job": {
+      "designation": "QA Engineer",
+      "domain": "Fullstack",
+      "department": "Platform",
+      "employee_type": "FTE",
+      "salary_band": "C"
+    },
+    "manager": {
+      "name": "Reyansh Joshi",
+      "email": "reyansh.joshi@example.com"
+    },
+    "joining_date": "2024-09-10",
+    "status": "Active",
+    "skills": [
+      "NodeJS",
+      "React",
+      "TypeScript"
+    ],
+    "projects": [
+      {
+        "project_id": "P1159",
+        "name": "Project P1159",
+        "role": "QA Engineer",
+        "duration_months": 2
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP054",
+    "profile": {
+      "name": "Atharv Salve",
+      "email": "atharv.salve54@example.com",
+      "phone": "+91 98727994735",
+      "location": "Nagpur",
+      "work_mode": "WFH"
+    },
+    "job": {
+      "designation": "Software Engineer",
+      "domain": "Backend",
+      "department": "Product",
+      "employee_type": "Intern",
+      "salary_band": "C"
+    },
+    "manager": {
+      "name": "Krishna Rao",
+      "email": "krishna.rao@example.com"
+    },
+    "joining_date": "2024-02-10",
+    "status": "Active",
+    "skills": [
+      "FastAPI",
+      "Django",
+      "Spring"
+    ],
+    "projects": [
+      {
+        "project_id": "P1162",
+        "name": "Project P1162",
+        "role": "Software Engineer",
+        "duration_months": 10
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP055",
+    "profile": {
+      "name": "Rudra Deshmukh",
+      "email": "rudra.deshmukh55@example.com",
+      "phone": "+91 98868796763",
+      "location": "Noida",
+      "work_mode": "Hybrid"
+    },
+    "job": {
+      "designation": "Software Engineer",
+      "domain": "Mobile",
+      "department": "Ops",
+      "employee_type": "Contract",
+      "salary_band": "B"
+    },
+    "manager": {
+      "name": "Dev Rathi",
+      "email": "dev.rathi@example.com"
+    },
+    "joining_date": "2020-11-23",
+    "status": "Active",
+    "skills": [
+      "Android",
+      "Flutter",
+      "React Native"
+    ],
+    "projects": [
+      {
+        "project_id": "P1165",
+        "name": "Project P1165",
+        "role": "Software Engineer",
+        "duration_months": 9
+      },
+      {
+        "project_id": "P1166",
+        "name": "Project P1166",
+        "role": "Software Engineer",
+        "duration_months": 11
+      },
+      {
+        "project_id": "P1167",
+        "name": "Project P1167",
+        "role": "Software Engineer",
+        "duration_months": 10
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP056",
+    "profile": {
+      "name": "Pranav Patil",
+      "email": "pranav.patil56@example.com",
+      "phone": "+91 98542243108",
+      "location": "Hyderabad",
+      "work_mode": "WFH"
+    },
+    "job": {
+      "designation": "DevOps Engineer",
+      "domain": "Support",
+      "department": "Design",
+      "employee_type": "Intern",
+      "salary_band": "C"
+    },
+    "manager": {
+      "name": "Parth Deshmukh",
+      "email": "parth.deshmukh@example.com"
+    },
+    "joining_date": "2022-12-05",
+    "status": "Active",
+    "skills": [
+      "Communication",
+      "SQL basics",
+      "Ticketing"
+    ],
+    "projects": [
+      {
+        "project_id": "P1168",
+        "name": "Project P1168",
+        "role": "DevOps Engineer",
+        "duration_months": 12
+      },
+      {
+        "project_id": "P1169",
+        "name": "Project P1169",
+        "role": "DevOps Engineer",
+        "duration_months": 8
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP057",
+    "profile": {
+      "name": "Samar Kaur",
+      "email": "samar.kaur57@example.com",
+      "phone": "+91 98477868656",
+      "location": "Bangalore",
+      "work_mode": "Office"
+    },
+    "job": {
+      "designation": "Frontend Engineer",
+      "domain": "Data",
+      "department": "Infra",
+      "employee_type": "Intern",
+      "salary_band": "A"
+    },
+    "manager": {
+      "name": "Arjun Kaur",
+      "email": "arjun.kaur@example.com"
+    },
+    "joining_date": "2023-02-08",
+    "status": "Active",
+    "skills": [
+      "PowerBI",
+      "Pandas",
+      "ETL"
+    ],
+    "projects": [
+      {
+        "project_id": "P1171",
+        "name": "Project P1171",
+        "role": "Frontend Engineer",
+        "duration_months": 4
+      },
+      {
+        "project_id": "P1172",
+        "name": "Project P1172",
+        "role": "Frontend Engineer",
+        "duration_months": 10
+      },
+      {
+        "project_id": "P1173",
+        "name": "Project P1173",
+        "role": "Frontend Engineer",
+        "duration_months": 10
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP058",
+    "profile": {
+      "name": "Anay Joshi",
+      "email": "anay.joshi58@example.com",
+      "phone": "+91 98715043880",
+      "location": "Remote",
+      "work_mode": "Hybrid"
+    },
+    "job": {
+      "designation": "Support Engineer",
+      "domain": "Backend",
+      "department": "Design",
+      "employee_type": "Contract",
+      "salary_band": "C"
+    },
+    "manager": {
+      "name": "Samar Kaur",
+      "email": "samar.kaur@example.com"
+    },
+    "joining_date": "2024-04-17",
+    "status": "Active",
+    "skills": [
+      "Django",
+      "Spring",
+      "Java"
+    ],
+    "projects": [
+      {
+        "project_id": "P1174",
+        "name": "Project P1174",
+        "role": "Support Engineer",
+        "duration_months": 4
+      },
+      {
+        "project_id": "P1175",
+        "name": "Project P1175",
+        "role": "Support Engineer",
+        "duration_months": 12
+      },
+      {
+        "project_id": "P1176",
+        "name": "Project P1176",
+        "role": "Support Engineer",
+        "duration_months": 15
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP059",
+    "profile": {
+      "name": "Yug Ghosh",
+      "email": "yug.ghosh59@example.com",
+      "phone": "+91 98945338932",
+      "location": "Hyderabad",
+      "work_mode": "WFH"
+    },
+    "job": {
+      "designation": "UI/UX Designer",
+      "domain": "Backend",
+      "department": "Quality",
+      "employee_type": "Contract",
+      "salary_band": "B"
+    },
+    "manager": {
+      "name": "Ishaan Gupta",
+      "email": "ishaan.gupta@example.com"
+    },
+    "joining_date": "2020-05-28",
+    "status": "Active",
+    "skills": [
+      "Java",
+      "Django",
+      "Spring"
+    ],
+    "projects": [
+      {
+        "project_id": "P1177",
+        "name": "Project P1177",
+        "role": "UI/UX Designer",
+        "duration_months": 16
+      },
+      {
+        "project_id": "P1178",
+        "name": "Project P1178",
+        "role": "UI/UX Designer",
+        "duration_months": 13
+      },
+      {
+        "project_id": "P1179",
+        "name": "Project P1179",
+        "role": "UI/UX Designer",
+        "duration_months": 9
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP060",
+    "profile": {
+      "name": "Parth Shah",
+      "email": "parth.shah60@example.com",
+      "phone": "+91 98321891266",
+      "location": "Noida",
+      "work_mode": "WFH"
+    },
+    "job": {
+      "designation": "Software Engineer",
+      "domain": "UI/UX",
+      "department": "IT",
+      "employee_type": "FTE",
+      "salary_band": "C"
+    },
+    "manager": {
+      "name": "Ishaan Salve",
+      "email": "ishaan.salve@example.com"
+    },
+    "joining_date": "2024-08-27",
+    "status": "Active",
+    "skills": [
+      "Wireframing",
+      "Figma",
+      "Prototyping"
+    ],
+    "projects": [
+      {
+        "project_id": "P1180",
+        "name": "Project P1180",
+        "role": "Software Engineer",
+        "duration_months": 6
+      },
+      {
+        "project_id": "P1181",
+        "name": "Project P1181",
+        "role": "Software Engineer",
+        "duration_months": 17
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP061",
+    "profile": {
+      "name": "Aarav Mehta",
+      "email": "aarav.mehta61@example.com",
+      "phone": "+91 98986946701",
+      "location": "Delhi",
+      "work_mode": "Office"
+    },
+    "job": {
+      "designation": "Support Engineer",
+      "domain": "AI",
+      "department": "Platform",
+      "employee_type": "Contract",
+      "salary_band": "B"
+    },
+    "manager": {
+      "name": "Ishaan Ghosh",
+      "email": "ishaan.ghosh@example.com"
+    },
+    "joining_date": "2023-03-17",
+    "status": "Inactive",
+    "skills": [
+      "Python",
+      "TensorFlow",
+      "LLMs"
+    ],
+    "projects": [
+      {
+        "project_id": "P1183",
+        "name": "Project P1183",
+        "role": "Support Engineer",
+        "duration_months": 18
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP062",
+    "profile": {
+      "name": "Vihaan Sharma",
+      "email": "vihaan.sharma62@example.com",
+      "phone": "+91 98828568569",
+      "location": "Pune",
+      "work_mode": "Office"
+    },
+    "job": {
+      "designation": "DevOps Engineer",
+      "domain": "UI/UX",
+      "department": "Ops",
+      "employee_type": "FTE",
+      "salary_band": "A"
+    },
+    "manager": {
+      "name": "Reyansh Kaur",
+      "email": "reyansh.kaur@example.com"
+    },
+    "joining_date": "2019-08-14",
+    "status": "Inactive",
+    "skills": [
+      "Wireframing",
+      "Figma",
+      "Prototyping"
+    ],
+    "projects": [
+      {
+        "project_id": "P1186",
+        "name": "Project P1186",
+        "role": "DevOps Engineer",
+        "duration_months": 3
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP063",
+    "profile": {
+      "name": "Reyansh Gupta",
+      "email": "reyansh.gupta63@example.com",
+      "phone": "+91 98948929243",
+      "location": "Chennai",
+      "work_mode": "WFH"
+    },
+    "job": {
+      "designation": "DevOps Engineer",
+      "domain": "Frontend",
+      "department": "Platform",
+      "employee_type": "Contract",
+      "salary_band": "C"
+    },
+    "manager": {
+      "name": "Ishaan Joshi",
+      "email": "ishaan.joshi@example.com"
+    },
+    "joining_date": "2019-02-06",
+    "status": "Active",
+    "skills": [
+      "HTML",
+      "Tailwind",
+      "TypeScript"
+    ],
+    "projects": [
+      {
+        "project_id": "P1189",
+        "name": "Project P1189",
+        "role": "DevOps Engineer",
+        "duration_months": 9
+      },
+      {
+        "project_id": "P1190",
+        "name": "Project P1190",
+        "role": "DevOps Engineer",
+        "duration_months": 10
+      },
+      {
+        "project_id": "P1191",
+        "name": "Project P1191",
+        "role": "DevOps Engineer",
+        "duration_months": 6
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP064",
+    "profile": {
+      "name": "Krishna Patel",
+      "email": "krishna.patel64@example.com",
+      "phone": "+91 98972846234",
+      "location": "Delhi",
+      "work_mode": "Office"
+    },
+    "job": {
+      "designation": "Frontend Engineer",
+      "domain": "Support",
+      "department": "Quality",
+      "employee_type": "FTE",
+      "salary_band": "B"
+    },
+    "manager": {
+      "name": "Aarav Singh",
+      "email": "aarav.singh@example.com"
+    },
+    "joining_date": "2020-02-01",
+    "status": "Active",
+    "skills": [
+      "SQL basics",
+      "Ticketing",
+      "Communication"
+    ],
+    "projects": [
+      {
+        "project_id": "P1192",
+        "name": "Project P1192",
+        "role": "Frontend Engineer",
+        "duration_months": 17
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP065",
+    "profile": {
+      "name": "Arjun Nair",
+      "email": "arjun.nair65@example.com",
+      "phone": "+91 98361618828",
+      "location": "Mumbai",
+      "work_mode": "WFH"
+    },
+    "job": {
+      "designation": "QA Engineer",
+      "domain": "Support",
+      "department": "Ops",
+      "employee_type": "FTE",
+      "salary_band": "C"
+    },
+    "manager": {
+      "name": "Samar Rathi",
+      "email": "samar.rathi@example.com"
+    },
+    "joining_date": "2021-11-12",
+    "status": "Inactive",
+    "skills": [
+      "Ticketing",
+      "SQL basics",
+      "Communication"
+    ],
+    "projects": [
+      {
+        "project_id": "P1195",
+        "name": "Project P1195",
+        "role": "QA Engineer",
+        "duration_months": 10
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP066",
+    "profile": {
+      "name": "Ayaan Rao",
+      "email": "ayaan.rao66@example.com",
+      "phone": "+91 98794822200",
+      "location": "Remote",
+      "work_mode": "WFH"
+    },
+    "job": {
+      "designation": "Backend Engineer",
+      "domain": "UI/UX",
+      "department": "IT",
+      "employee_type": "FTE",
+      "salary_band": "A"
+    },
+    "manager": {
+      "name": "Ishaan Deshmukh",
+      "email": "ishaan.deshmukh@example.com"
+    },
+    "joining_date": "2021-07-25",
+    "status": "Active",
+    "skills": [
+      "Prototyping",
+      "Wireframing",
+      "Figma"
+    ],
+    "projects": [
+      {
+        "project_id": "P1198",
+        "name": "Project P1198",
+        "role": "Backend Engineer",
+        "duration_months": 17
+      },
+      {
+        "project_id": "P1199",
+        "name": "Project P1199",
+        "role": "Backend Engineer",
+        "duration_months": 5
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP067",
+    "profile": {
+      "name": "Kabir Malik",
+      "email": "kabir.malik67@example.com",
+      "phone": "+91 98442388464",
+      "location": "Mumbai",
+      "work_mode": "Hybrid"
+    },
+    "job": {
+      "designation": "Mobile Developer",
+      "domain": "Backend",
+      "department": "Quality",
+      "employee_type": "Intern",
+      "salary_band": "C"
+    },
+    "manager": {
+      "name": "Ayush Khanna",
+      "email": "ayush.khanna@example.com"
+    },
+    "joining_date": "2020-08-21",
+    "status": "Inactive",
+    "skills": [
+      "Java",
+      "NodeJS",
+      "FastAPI"
+    ],
+    "projects": [
+      {
+        "project_id": "P1201",
+        "name": "Project P1201",
+        "role": "Mobile Developer",
+        "duration_months": 9
+      },
+      {
+        "project_id": "P1202",
+        "name": "Project P1202",
+        "role": "Mobile Developer",
+        "duration_months": 12
+      },
+      {
+        "project_id": "P1203",
+        "name": "Project P1203",
+        "role": "Mobile Developer",
+        "duration_months": 5
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP068",
+    "profile": {
+      "name": "Dev Kapoor",
+      "email": "dev.kapoor68@example.com",
+      "phone": "+91 98802485499",
+      "location": "Chennai",
+      "work_mode": "Hybrid"
+    },
+    "job": {
+      "designation": "Data Analyst",
+      "domain": "Fullstack",
+      "department": "Business",
+      "employee_type": "Intern",
+      "salary_band": "C"
+    },
+    "manager": {
+      "name": "Reyansh Rathi",
+      "email": "reyansh.rathi@example.com"
+    },
+    "joining_date": "2019-03-18",
+    "status": "Inactive",
+    "skills": [
+      "NodeJS",
+      "Express",
+      "TypeScript"
+    ],
+    "projects": [
+      {
+        "project_id": "P1204",
+        "name": "Project P1204",
+        "role": "Data Analyst",
+        "duration_months": 18
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP069",
+    "profile": {
+      "name": "Advik Jain",
+      "email": "advik.jain69@example.com",
+      "phone": "+91 98463544227",
+      "location": "Bangalore",
+      "work_mode": "WFH"
+    },
+    "job": {
+      "designation": "Product Manager",
+      "domain": "Fullstack",
+      "department": "IT",
+      "employee_type": "FTE",
+      "salary_band": "A"
+    },
+    "manager": {
+      "name": "Anay Jain",
+      "email": "anay.jain@example.com"
+    },
+    "joining_date": "2023-04-04",
+    "status": "Inactive",
+    "skills": [
+      "TypeScript",
+      "MongoDB",
+      "Express"
+    ],
+    "projects": [
+      {
+        "project_id": "P1207",
+        "name": "Project P1207",
+        "role": "Product Manager",
+        "duration_months": 5
+      },
+      {
+        "project_id": "P1208",
+        "name": "Project P1208",
+        "role": "Product Manager",
+        "duration_months": 13
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP070",
+    "profile": {
+      "name": "Arnav Rathi",
+      "email": "arnav.rathi70@example.com",
+      "phone": "+91 98848858261",
+      "location": "Nagpur",
+      "work_mode": "Office"
+    },
+    "job": {
+      "designation": "Product Manager",
+      "domain": "AI",
+      "department": "Quality",
+      "employee_type": "Contract",
+      "salary_band": "A"
+    },
+    "manager": {
+      "name": "Parth Gupta",
+      "email": "parth.gupta@example.com"
+    },
+    "joining_date": "2020-10-20",
+    "status": "Active",
+    "skills": [
+      "Python",
+      "TensorFlow",
+      "PyTorch"
+    ],
+    "projects": [
+      {
+        "project_id": "P1210",
+        "name": "Project P1210",
+        "role": "Product Manager",
+        "duration_months": 7
+      },
+      {
+        "project_id": "P1211",
+        "name": "Project P1211",
+        "role": "Product Manager",
+        "duration_months": 3
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP071",
+    "profile": {
+      "name": "Ishaan Singh",
+      "email": "ishaan.singh71@example.com",
+      "phone": "+91 98268583939",
+      "location": "Remote",
+      "work_mode": "Hybrid"
+    },
+    "job": {
+      "designation": "Support Engineer",
+      "domain": "Fullstack",
+      "department": "Platform",
+      "employee_type": "FTE",
+      "salary_band": "A"
+    },
+    "manager": {
+      "name": "Arjun Kapoor",
+      "email": "arjun.kapoor@example.com"
+    },
+    "joining_date": "2023-06-25",
+    "status": "Active",
+    "skills": [
+      "React",
+      "Express",
+      "TypeScript"
+    ],
+    "projects": [
+      {
+        "project_id": "P1213",
+        "name": "Project P1213",
+        "role": "Support Engineer",
+        "duration_months": 14
+      },
+      {
+        "project_id": "P1214",
+        "name": "Project P1214",
+        "role": "Support Engineer",
+        "duration_months": 6
+      },
+      {
+        "project_id": "P1215",
+        "name": "Project P1215",
+        "role": "Support Engineer",
+        "duration_months": 18
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP072",
+    "profile": {
+      "name": "Shivansh Yadav",
+      "email": "shivansh.yadav72@example.com",
+      "phone": "+91 98205809170",
+      "location": "Mumbai",
+      "work_mode": "Office"
+    },
+    "job": {
+      "designation": "Mobile Developer",
+      "domain": "Backend",
+      "department": "Analytics",
+      "employee_type": "Intern",
+      "salary_band": "A"
+    },
+    "manager": {
+      "name": "Arnav Salve",
+      "email": "arnav.salve@example.com"
+    },
+    "joining_date": "2021-05-07",
+    "status": "Active",
+    "skills": [
+      "Java",
+      "NodeJS",
+      "Python"
+    ],
+    "projects": [
+      {
+        "project_id": "P1216",
+        "name": "Project P1216",
+        "role": "Mobile Developer",
+        "duration_months": 4
+      },
+      {
+        "project_id": "P1217",
+        "name": "Project P1217",
+        "role": "Mobile Developer",
+        "duration_months": 10
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP073",
+    "profile": {
+      "name": "Ayush Khanna",
+      "email": "ayush.khanna73@example.com",
+      "phone": "+91 98227755125",
+      "location": "Pune",
+      "work_mode": "Hybrid"
+    },
+    "job": {
+      "designation": "Backend Engineer",
+      "domain": "Fullstack",
+      "department": "Ops",
+      "employee_type": "FTE",
+      "salary_band": "A"
+    },
+    "manager": {
+      "name": "Rudra Deshmukh",
+      "email": "rudra.deshmukh@example.com"
+    },
+    "joining_date": "2018-03-03",
+    "status": "Active",
+    "skills": [
+      "React",
+      "TypeScript",
+      "NodeJS"
+    ],
+    "projects": [
+      {
+        "project_id": "P1219",
+        "name": "Project P1219",
+        "role": "Backend Engineer",
+        "duration_months": 11
+      },
+      {
+        "project_id": "P1220",
+        "name": "Project P1220",
+        "role": "Backend Engineer",
+        "duration_months": 3
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP074",
+    "profile": {
+      "name": "Atharv Salve",
+      "email": "atharv.salve74@example.com",
+      "phone": "+91 98608391638",
+      "location": "Remote",
+      "work_mode": "Office"
+    },
+    "job": {
+      "designation": "QA Engineer",
+      "domain": "DevOps",
+      "department": "Quality",
+      "employee_type": "FTE",
+      "salary_band": "B"
+    },
+    "manager": {
+      "name": "Kabir Khanna",
+      "email": "kabir.khanna@example.com"
+    },
+    "joining_date": "2020-09-03",
+    "status": "Active",
+    "skills": [
+      "Docker",
+      "CI/CD",
+      "Terraform"
+    ],
+    "projects": [
+      {
+        "project_id": "P1222",
+        "name": "Project P1222",
+        "role": "QA Engineer",
+        "duration_months": 7
+      },
+      {
+        "project_id": "P1223",
+        "name": "Project P1223",
+        "role": "QA Engineer",
+        "duration_months": 16
+      },
+      {
+        "project_id": "P1224",
+        "name": "Project P1224",
+        "role": "QA Engineer",
+        "duration_months": 7
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP075",
+    "profile": {
+      "name": "Rudra Deshmukh",
+      "email": "rudra.deshmukh75@example.com",
+      "phone": "+91 98214220326",
+      "location": "Delhi",
+      "work_mode": "WFH"
+    },
+    "job": {
+      "designation": "Mobile Developer",
+      "domain": "Testing",
+      "department": "Quality",
+      "employee_type": "FTE",
+      "salary_band": "C"
+    },
+    "manager": {
+      "name": "Arjun Malik",
+      "email": "arjun.malik@example.com"
+    },
+    "joining_date": "2019-05-03",
+    "status": "Inactive",
+    "skills": [
+      "Pytest",
+      "Postman",
+      "Selenium"
+    ],
+    "projects": [
+      {
+        "project_id": "P1225",
+        "name": "Project P1225",
+        "role": "Mobile Developer",
+        "duration_months": 8
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP076",
+    "profile": {
+      "name": "Pranav Patil",
+      "email": "pranav.patil76@example.com",
+      "phone": "+91 98103490646",
+      "location": "Ahmedabad",
+      "work_mode": "Hybrid"
+    },
+    "job": {
+      "designation": "Software Engineer",
+      "domain": "AI",
+      "department": "Platform",
+      "employee_type": "Contract",
+      "salary_band": "A"
+    },
+    "manager": {
+      "name": "Shivansh Joshi",
+      "email": "shivansh.joshi@example.com"
+    },
+    "joining_date": "2018-10-08",
+    "status": "Active",
+    "skills": [
+      "LLMs",
+      "TensorFlow",
+      "PyTorch"
+    ],
+    "projects": [
+      {
+        "project_id": "P1228",
+        "name": "Project P1228",
+        "role": "Software Engineer",
+        "duration_months": 5
+      },
+      {
+        "project_id": "P1229",
+        "name": "Project P1229",
+        "role": "Software Engineer",
+        "duration_months": 9
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP077",
+    "profile": {
+      "name": "Samar Kaur",
+      "email": "samar.kaur77@example.com",
+      "phone": "+91 98792526754",
+      "location": "Remote",
+      "work_mode": "WFH"
+    },
+    "job": {
+      "designation": "Data Analyst",
+      "domain": "Testing",
+      "department": "Product",
+      "employee_type": "Contract",
+      "salary_band": "B"
+    },
+    "manager": {
+      "name": "Advik Salve",
+      "email": "advik.salve@example.com"
+    },
+    "joining_date": "2019-12-07",
+    "status": "Inactive",
+    "skills": [
+      "JMeter",
+      "Pytest",
+      "Postman"
+    ],
+    "projects": [
+      {
+        "project_id": "P1231",
+        "name": "Project P1231",
+        "role": "Data Analyst",
+        "duration_months": 7
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP078",
+    "profile": {
+      "name": "Anay Joshi",
+      "email": "anay.joshi78@example.com",
+      "phone": "+91 98127793184",
+      "location": "Nagpur",
+      "work_mode": "WFH"
+    },
+    "job": {
+      "designation": "UI/UX Designer",
+      "domain": "Testing",
+      "department": "Business",
+      "employee_type": "FTE",
+      "salary_band": "A"
+    },
+    "manager": {
+      "name": "Parth Singh",
+      "email": "parth.singh@example.com"
+    },
+    "joining_date": "2024-01-03",
+    "status": "Active",
+    "skills": [
+      "Postman",
+      "Selenium",
+      "Pytest"
+    ],
+    "projects": [
+      {
+        "project_id": "P1234",
+        "name": "Project P1234",
+        "role": "UI/UX Designer",
+        "duration_months": 4
+      },
+      {
+        "project_id": "P1235",
+        "name": "Project P1235",
+        "role": "UI/UX Designer",
+        "duration_months": 3
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP079",
+    "profile": {
+      "name": "Yug Ghosh",
+      "email": "yug.ghosh79@example.com",
+      "phone": "+91 98568275242",
+      "location": "Ahmedabad",
+      "work_mode": "WFH"
+    },
+    "job": {
+      "designation": "Mobile Developer",
+      "domain": "Data",
+      "department": "Research",
+      "employee_type": "FTE",
+      "salary_band": "B"
+    },
+    "manager": {
+      "name": "Ayaan Khanna",
+      "email": "ayaan.khanna@example.com"
+    },
+    "joining_date": "2020-05-17",
+    "status": "Active",
+    "skills": [
+      "SQL",
+      "ETL",
+      "PowerBI"
+    ],
+    "projects": [
+      {
+        "project_id": "P1237",
+        "name": "Project P1237",
+        "role": "Mobile Developer",
+        "duration_months": 4
+      },
+      {
+        "project_id": "P1238",
+        "name": "Project P1238",
+        "role": "Mobile Developer",
+        "duration_months": 11
+      },
+      {
+        "project_id": "P1239",
+        "name": "Project P1239",
+        "role": "Mobile Developer",
+        "duration_months": 6
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP080",
+    "profile": {
+      "name": "Parth Shah",
+      "email": "parth.shah80@example.com",
+      "phone": "+91 98511157201",
+      "location": "Pune",
+      "work_mode": "Hybrid"
+    },
+    "job": {
+      "designation": "QA Engineer",
+      "domain": "UI/UX",
+      "department": "Research",
+      "employee_type": "Intern",
+      "salary_band": "A"
+    },
+    "manager": {
+      "name": "Reyansh Malik",
+      "email": "reyansh.malik@example.com"
+    },
+    "joining_date": "2022-10-28",
+    "status": "Active",
+    "skills": [
+      "Wireframing",
+      "Prototyping",
+      "Figma"
+    ],
+    "projects": [
+      {
+        "project_id": "P1240",
+        "name": "Project P1240",
+        "role": "QA Engineer",
+        "duration_months": 6
+      },
+      {
+        "project_id": "P1241",
+        "name": "Project P1241",
+        "role": "QA Engineer",
+        "duration_months": 10
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP081",
+    "profile": {
+      "name": "Aarav Mehta",
+      "email": "aarav.mehta81@example.com",
+      "phone": "+91 98243707495",
+      "location": "Mumbai",
+      "work_mode": "Office"
+    },
+    "job": {
+      "designation": "Mobile Developer",
+      "domain": "Mobile",
+      "department": "Infra",
+      "employee_type": "Intern",
+      "salary_band": "B"
+    },
+    "manager": {
+      "name": "Shivansh Rao",
+      "email": "shivansh.rao@example.com"
+    },
+    "joining_date": "2023-01-16",
+    "status": "Active",
+    "skills": [
+      "Flutter",
+      "Android",
+      "React Native"
+    ],
+    "projects": [
+      {
+        "project_id": "P1243",
+        "name": "Project P1243",
+        "role": "Mobile Developer",
+        "duration_months": 10
+      },
+      {
+        "project_id": "P1244",
+        "name": "Project P1244",
+        "role": "Mobile Developer",
+        "duration_months": 8
+      },
+      {
+        "project_id": "P1245",
+        "name": "Project P1245",
+        "role": "Mobile Developer",
+        "duration_months": 7
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP082",
+    "profile": {
+      "name": "Vihaan Sharma",
+      "email": "vihaan.sharma82@example.com",
+      "phone": "+91 98669743459",
+      "location": "Hyderabad",
+      "work_mode": "Hybrid"
+    },
+    "job": {
+      "designation": "Mobile Developer",
+      "domain": "Mobile",
+      "department": "Product",
+      "employee_type": "Intern",
+      "salary_band": "C"
+    },
+    "manager": {
+      "name": "Yug Salve",
+      "email": "yug.salve@example.com"
+    },
+    "joining_date": "2020-10-19",
+    "status": "Inactive",
+    "skills": [
+      "React Native",
+      "Flutter",
+      "Android"
+    ],
+    "projects": [
+      {
+        "project_id": "P1246",
+        "name": "Project P1246",
+        "role": "Mobile Developer",
+        "duration_months": 4
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP083",
+    "profile": {
+      "name": "Reyansh Gupta",
+      "email": "reyansh.gupta83@example.com",
+      "phone": "+91 98631371169",
+      "location": "Hyderabad",
+      "work_mode": "Office"
+    },
+    "job": {
+      "designation": "Mobile Developer",
+      "domain": "AI",
+      "department": "Analytics",
+      "employee_type": "FTE",
+      "salary_band": "A"
+    },
+    "manager": {
+      "name": "Anay Malik",
+      "email": "anay.malik@example.com"
+    },
+    "joining_date": "2024-07-05",
+    "status": "Active",
+    "skills": [
+      "LLMs",
+      "Python",
+      "PyTorch"
+    ],
+    "projects": [
+      {
+        "project_id": "P1249",
+        "name": "Project P1249",
+        "role": "Mobile Developer",
+        "duration_months": 8
+      },
+      {
+        "project_id": "P1250",
+        "name": "Project P1250",
+        "role": "Mobile Developer",
+        "duration_months": 4
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP084",
+    "profile": {
+      "name": "Krishna Patel",
+      "email": "krishna.patel84@example.com",
+      "phone": "+91 98751320869",
+      "location": "Hyderabad",
+      "work_mode": "Hybrid"
+    },
+    "job": {
+      "designation": "Data Analyst",
+      "domain": "Testing",
+      "department": "Analytics",
+      "employee_type": "Contract",
+      "salary_band": "B"
+    },
+    "manager": {
+      "name": "Atharv Yadav",
+      "email": "atharv.yadav@example.com"
+    },
+    "joining_date": "2020-11-17",
+    "status": "Active",
+    "skills": [
+      "Selenium",
+      "Postman",
+      "JMeter"
+    ],
+    "projects": [
+      {
+        "project_id": "P1252",
+        "name": "Project P1252",
+        "role": "Data Analyst",
+        "duration_months": 16
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP085",
+    "profile": {
+      "name": "Arjun Nair",
+      "email": "arjun.nair85@example.com",
+      "phone": "+91 98218471719",
+      "location": "Delhi",
+      "work_mode": "WFH"
+    },
+    "job": {
+      "designation": "Data Analyst",
+      "domain": "UI/UX",
+      "department": "Analytics",
+      "employee_type": "Intern",
+      "salary_band": "A"
+    },
+    "manager": {
+      "name": "Samar Rao",
+      "email": "samar.rao@example.com"
+    },
+    "joining_date": "2020-10-20",
+    "status": "Active",
+    "skills": [
+      "Figma",
+      "Wireframing",
+      "Prototyping"
+    ],
+    "projects": [
+      {
+        "project_id": "P1255",
+        "name": "Project P1255",
+        "role": "Data Analyst",
+        "duration_months": 6
+      },
+      {
+        "project_id": "P1256",
+        "name": "Project P1256",
+        "role": "Data Analyst",
+        "duration_months": 15
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP086",
+    "profile": {
+      "name": "Ayaan Rao",
+      "email": "ayaan.rao86@example.com",
+      "phone": "+91 98146747525",
+      "location": "Pune",
+      "work_mode": "WFH"
+    },
+    "job": {
+      "designation": "Support Engineer",
+      "domain": "Backend",
+      "department": "Research",
+      "employee_type": "FTE",
+      "salary_band": "A"
+    },
+    "manager": {
+      "name": "Arjun Kapoor",
+      "email": "arjun.kapoor@example.com"
+    },
+    "joining_date": "2024-01-20",
+    "status": "Inactive",
+    "skills": [
+      "Spring",
+      "Python",
+      "Django"
+    ],
+    "projects": [
+      {
+        "project_id": "P1258",
+        "name": "Project P1258",
+        "role": "Support Engineer",
+        "duration_months": 18
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP087",
+    "profile": {
+      "name": "Kabir Malik",
+      "email": "kabir.malik87@example.com",
+      "phone": "+91 98969444112",
+      "location": "Pune",
+      "work_mode": "WFH"
+    },
+    "job": {
+      "designation": "Frontend Engineer",
+      "domain": "Data",
+      "department": "Platform",
+      "employee_type": "Intern",
+      "salary_band": "C"
+    },
+    "manager": {
+      "name": "Ishaan Gupta",
+      "email": "ishaan.gupta@example.com"
+    },
+    "joining_date": "2018-01-25",
+    "status": "Active",
+    "skills": [
+      "PowerBI",
+      "ETL",
+      "SQL"
+    ],
+    "projects": [
+      {
+        "project_id": "P1261",
+        "name": "Project P1261",
+        "role": "Frontend Engineer",
+        "duration_months": 3
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP088",
+    "profile": {
+      "name": "Dev Kapoor",
+      "email": "dev.kapoor88@example.com",
+      "phone": "+91 98122953700",
+      "location": "Ahmedabad",
+      "work_mode": "Hybrid"
+    },
+    "job": {
+      "designation": "Support Engineer",
+      "domain": "AI",
+      "department": "Ops",
+      "employee_type": "Contract",
+      "salary_band": "A"
+    },
+    "manager": {
+      "name": "Reyansh Mehta",
+      "email": "reyansh.mehta@example.com"
+    },
+    "joining_date": "2021-09-22",
+    "status": "Inactive",
+    "skills": [
+      "Python",
+      "TensorFlow",
+      "LLMs"
+    ],
+    "projects": [
+      {
+        "project_id": "P1264",
+        "name": "Project P1264",
+        "role": "Support Engineer",
+        "duration_months": 7
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP089",
+    "profile": {
+      "name": "Advik Jain",
+      "email": "advik.jain89@example.com",
+      "phone": "+91 98949488514",
+      "location": "Noida",
+      "work_mode": "WFH"
+    },
+    "job": {
+      "designation": "Product Manager",
+      "domain": "Support",
+      "department": "IT",
+      "employee_type": "FTE",
+      "salary_band": "A"
+    },
+    "manager": {
+      "name": "Samar Deshmukh",
+      "email": "samar.deshmukh@example.com"
+    },
+    "joining_date": "2023-10-09",
+    "status": "Active",
+    "skills": [
+      "Ticketing",
+      "SQL basics",
+      "Communication"
+    ],
+    "projects": [
+      {
+        "project_id": "P1267",
+        "name": "Project P1267",
+        "role": "Product Manager",
+        "duration_months": 14
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP090",
+    "profile": {
+      "name": "Arnav Rathi",
+      "email": "arnav.rathi90@example.com",
+      "phone": "+91 98519074182",
+      "location": "Delhi",
+      "work_mode": "Office"
+    },
+    "job": {
+      "designation": "QA Engineer",
+      "domain": "Frontend",
+      "department": "Ops",
+      "employee_type": "Contract",
+      "salary_band": "A"
+    },
+    "manager": {
+      "name": "Advik Patil",
+      "email": "advik.patil@example.com"
+    },
+    "joining_date": "2020-08-27",
+    "status": "Active",
+    "skills": [
+      "React",
+      "HTML",
+      "CSS"
+    ],
+    "projects": [
+      {
+        "project_id": "P1270",
+        "name": "Project P1270",
+        "role": "QA Engineer",
+        "duration_months": 15
+      },
+      {
+        "project_id": "P1271",
+        "name": "Project P1271",
+        "role": "QA Engineer",
+        "duration_months": 17
+      },
+      {
+        "project_id": "P1272",
+        "name": "Project P1272",
+        "role": "QA Engineer",
+        "duration_months": 3
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP091",
+    "profile": {
+      "name": "Ishaan Singh",
+      "email": "ishaan.singh91@example.com",
+      "phone": "+91 98471706584",
+      "location": "Bangalore",
+      "work_mode": "Office"
+    },
+    "job": {
+      "designation": "Data Analyst",
+      "domain": "DevOps",
+      "department": "Analytics",
+      "employee_type": "FTE",
+      "salary_band": "C"
+    },
+    "manager": {
+      "name": "Samar Gupta",
+      "email": "samar.gupta@example.com"
+    },
+    "joining_date": "2022-01-28",
+    "status": "Active",
+    "skills": [
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "projects": [
+      {
+        "project_id": "P1273",
+        "name": "Project P1273",
+        "role": "Data Analyst",
+        "duration_months": 7
+      },
+      {
+        "project_id": "P1274",
+        "name": "Project P1274",
+        "role": "Data Analyst",
+        "duration_months": 12
+      },
+      {
+        "project_id": "P1275",
+        "name": "Project P1275",
+        "role": "Data Analyst",
+        "duration_months": 15
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP092",
+    "profile": {
+      "name": "Shivansh Yadav",
+      "email": "shivansh.yadav92@example.com",
+      "phone": "+91 98805464473",
+      "location": "Noida",
+      "work_mode": "Hybrid"
+    },
+    "job": {
+      "designation": "Software Engineer",
+      "domain": "Backend",
+      "department": "Quality",
+      "employee_type": "Intern",
+      "salary_band": "A"
+    },
+    "manager": {
+      "name": "Ishaan Singh",
+      "email": "ishaan.singh@example.com"
+    },
+    "joining_date": "2018-11-01",
+    "status": "Inactive",
+    "skills": [
+      "Python",
+      "Spring",
+      "Java"
+    ],
+    "projects": [
+      {
+        "project_id": "P1276",
+        "name": "Project P1276",
+        "role": "Software Engineer",
+        "duration_months": 7
+      },
+      {
+        "project_id": "P1277",
+        "name": "Project P1277",
+        "role": "Software Engineer",
+        "duration_months": 6
+      },
+      {
+        "project_id": "P1278",
+        "name": "Project P1278",
+        "role": "Software Engineer",
+        "duration_months": 2
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP093",
+    "profile": {
+      "name": "Ayush Khanna",
+      "email": "ayush.khanna93@example.com",
+      "phone": "+91 98395782848",
+      "location": "Noida",
+      "work_mode": "Hybrid"
+    },
+    "job": {
+      "designation": "Mobile Developer",
+      "domain": "Frontend",
+      "department": "Business",
+      "employee_type": "FTE",
+      "salary_band": "B"
+    },
+    "manager": {
+      "name": "Ayaan Sharma",
+      "email": "ayaan.sharma@example.com"
+    },
+    "joining_date": "2024-04-13",
+    "status": "Active",
+    "skills": [
+      "CSS",
+      "React",
+      "HTML"
+    ],
+    "projects": [
+      {
+        "project_id": "P1279",
+        "name": "Project P1279",
+        "role": "Mobile Developer",
+        "duration_months": 2
+      },
+      {
+        "project_id": "P1280",
+        "name": "Project P1280",
+        "role": "Mobile Developer",
+        "duration_months": 4
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP094",
+    "profile": {
+      "name": "Atharv Salve",
+      "email": "atharv.salve94@example.com",
+      "phone": "+91 98164712503",
+      "location": "Pune",
+      "work_mode": "Hybrid"
+    },
+    "job": {
+      "designation": "QA Engineer",
+      "domain": "Testing",
+      "department": "Research",
+      "employee_type": "FTE",
+      "salary_band": "B"
+    },
+    "manager": {
+      "name": "Arjun Singh",
+      "email": "arjun.singh@example.com"
+    },
+    "joining_date": "2023-06-23",
+    "status": "Active",
+    "skills": [
+      "Selenium",
+      "Pytest",
+      "JMeter"
+    ],
+    "projects": [
+      {
+        "project_id": "P1282",
+        "name": "Project P1282",
+        "role": "QA Engineer",
+        "duration_months": 10
+      },
+      {
+        "project_id": "P1283",
+        "name": "Project P1283",
+        "role": "QA Engineer",
+        "duration_months": 13
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP095",
+    "profile": {
+      "name": "Rudra Deshmukh",
+      "email": "rudra.deshmukh95@example.com",
+      "phone": "+91 98779930422",
+      "location": "Bangalore",
+      "work_mode": "Hybrid"
+    },
+    "job": {
+      "designation": "UI/UX Designer",
+      "domain": "Support",
+      "department": "Business",
+      "employee_type": "Contract",
+      "salary_band": "B"
+    },
+    "manager": {
+      "name": "Vihaan Khanna",
+      "email": "vihaan.khanna@example.com"
+    },
+    "joining_date": "2023-01-28",
+    "status": "Active",
+    "skills": [
+      "Ticketing",
+      "SQL basics",
+      "Communication"
+    ],
+    "projects": [
+      {
+        "project_id": "P1285",
+        "name": "Project P1285",
+        "role": "UI/UX Designer",
+        "duration_months": 2
+      },
+      {
+        "project_id": "P1286",
+        "name": "Project P1286",
+        "role": "UI/UX Designer",
+        "duration_months": 18
+      },
+      {
+        "project_id": "P1287",
+        "name": "Project P1287",
+        "role": "UI/UX Designer",
+        "duration_months": 12
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP096",
+    "profile": {
+      "name": "Pranav Patil",
+      "email": "pranav.patil96@example.com",
+      "phone": "+91 98427885488",
+      "location": "Chennai",
+      "work_mode": "Hybrid"
+    },
+    "job": {
+      "designation": "Mobile Developer",
+      "domain": "Support",
+      "department": "Infra",
+      "employee_type": "Intern",
+      "salary_band": "B"
+    },
+    "manager": {
+      "name": "Reyansh Khanna",
+      "email": "reyansh.khanna@example.com"
+    },
+    "joining_date": "2019-08-12",
+    "status": "Active",
+    "skills": [
+      "SQL basics",
+      "Communication",
+      "Ticketing"
+    ],
+    "projects": [
+      {
+        "project_id": "P1288",
+        "name": "Project P1288",
+        "role": "Mobile Developer",
+        "duration_months": 5
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP097",
+    "profile": {
+      "name": "Samar Kaur",
+      "email": "samar.kaur97@example.com",
+      "phone": "+91 98998441762",
+      "location": "Pune",
+      "work_mode": "WFH"
+    },
+    "job": {
+      "designation": "Data Analyst",
+      "domain": "Support",
+      "department": "IT",
+      "employee_type": "Contract",
+      "salary_band": "C"
+    },
+    "manager": {
+      "name": "Kabir Mehta",
+      "email": "kabir.mehta@example.com"
+    },
+    "joining_date": "2024-05-20",
+    "status": "Active",
+    "skills": [
+      "Communication",
+      "Ticketing",
+      "SQL basics"
+    ],
+    "projects": [
+      {
+        "project_id": "P1291",
+        "name": "Project P1291",
+        "role": "Data Analyst",
+        "duration_months": 9
+      },
+      {
+        "project_id": "P1292",
+        "name": "Project P1292",
+        "role": "Data Analyst",
+        "duration_months": 18
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP098",
+    "profile": {
+      "name": "Anay Joshi",
+      "email": "anay.joshi98@example.com",
+      "phone": "+91 98768527116",
+      "location": "Hyderabad",
+      "work_mode": "Hybrid"
+    },
+    "job": {
+      "designation": "UI/UX Designer",
+      "domain": "UI/UX",
+      "department": "Design",
+      "employee_type": "Contract",
+      "salary_band": "C"
+    },
+    "manager": {
+      "name": "Shivansh Gupta",
+      "email": "shivansh.gupta@example.com"
+    },
+    "joining_date": "2018-06-26",
+    "status": "Inactive",
+    "skills": [
+      "Prototyping",
+      "Wireframing",
+      "Figma"
+    ],
+    "projects": [
+      {
+        "project_id": "P1294",
+        "name": "Project P1294",
+        "role": "UI/UX Designer",
+        "duration_months": 2
+      },
+      {
+        "project_id": "P1295",
+        "name": "Project P1295",
+        "role": "UI/UX Designer",
+        "duration_months": 18
+      },
+      {
+        "project_id": "P1296",
+        "name": "Project P1296",
+        "role": "UI/UX Designer",
+        "duration_months": 5
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP099",
+    "profile": {
+      "name": "Yug Ghosh",
+      "email": "yug.ghosh99@example.com",
+      "phone": "+91 98591247335",
+      "location": "Chennai",
+      "work_mode": "Hybrid"
+    },
+    "job": {
+      "designation": "Data Analyst",
+      "domain": "Data",
+      "department": "Research",
+      "employee_type": "Intern",
+      "salary_band": "A"
+    },
+    "manager": {
+      "name": "Shivansh Mehta",
+      "email": "shivansh.mehta@example.com"
+    },
+    "joining_date": "2023-06-24",
+    "status": "Active",
+    "skills": [
+      "PowerBI",
+      "SQL",
+      "Pandas"
+    ],
+    "projects": [
+      {
+        "project_id": "P1297",
+        "name": "Project P1297",
+        "role": "Data Analyst",
+        "duration_months": 2
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP100",
+    "profile": {
+      "name": "Parth Shah",
+      "email": "parth.shah100@example.com",
+      "phone": "+91 98702814503",
+      "location": "Chennai",
+      "work_mode": "Office"
+    },
+    "job": {
+      "designation": "Mobile Developer",
+      "domain": "AI",
+      "department": "Analytics",
+      "employee_type": "Contract",
+      "salary_band": "A"
+    },
+    "manager": {
+      "name": "Parth Joshi",
+      "email": "parth.joshi@example.com"
+    },
+    "joining_date": "2020-02-23",
+    "status": "Active",
+    "skills": [
+      "Python",
+      "PyTorch",
+      "TensorFlow"
+    ],
+    "projects": [
+      {
+        "project_id": "P1300",
+        "name": "Project P1300",
+        "role": "Mobile Developer",
+        "duration_months": 2
+      },
+      {
+        "project_id": "P1301",
+        "name": "Project P1301",
+        "role": "Mobile Developer",
+        "duration_months": 14
+      }
+    ]
+  }
+]
