@@ -16,15 +16,10 @@ ALGORITHM = "HS256"
 
 app = FastAPI()
 
-origins = [
-    "http://127.0.0.1:5173",
-    "http://localhost:5173",
-    "https://nagster.vercel.app",
-]
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
+     allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
