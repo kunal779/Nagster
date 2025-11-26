@@ -4,6 +4,8 @@ import threading
 from datetime import datetime
 import os
 import requests
+import ctypes
+import statistics
 
 from pynput import keyboard, mouse
 import psutil
@@ -20,6 +22,16 @@ from tkinter import messagebox
 
 CONFIG_PATH = "config.json"
 DEFAULT_BASE_URL = "http://127.0.0.1:8000"
+
+# Simple keys jo spam ke liye use hote hain
+SIMPLE_KEYS = {
+    "Key.space",
+    "Key.esc",
+    "Key.up",
+    "Key.down",
+    "Key.left",
+    "Key.right",
+}
 
 
 # ==============================
@@ -175,8 +187,11 @@ class NagsterAgent:
         base_cfg = {
             "backend_base_url": DEFAULT_BASE_URL,
             "send_interval_seconds": 60,
-            "idle_threshold_seconds": 300,
+            "idle_threshold_seconds": 300,   # iske baad se idle count kar
+            "idle_logout_seconds": 300,      # iske baad auto logout
             "suspicious_key_threshold": 500,
+            # lock / disconnect / logoff
+            "logout_action": "disconnect",
         }
         if config:
             base_cfg.update(config)
@@ -190,17 +205,31 @@ class NagsterAgent:
         self.total_active_seconds = 0
         self.total_idle_seconds = 0
 
+        # interval suspicious count (sirf current payload ke liye)
         self.suspicious_count = 0
+        # session-level suspicious (reset nahi hota jab tak agent chal raha hai)
+        self.session_suspicious_count = 0
+
         self.last_activity_ts = time.time()
         self.last_send_ts = 0
         self.last_send_time_str = "Never"
         self.backend_status = "Not checked"
         self.running = False
 
-        # suspicious detection
+        # suspicious / fake detection
         self.last_key = None
         self.same_key_streak = 0
         self.suspicious_threshold = self.config.get("suspicious_key_threshold", 500)
+
+        # mouse / window tracking for fake detection
+        now = time.time()
+        self.last_mouse_move_ts = now
+        self.last_window_change_ts = now
+        self.last_active_hwnd = None
+
+        # timing pattern for keys (for uniform spam detection)
+        self.key_times = []
+        self.key_times_window_sec = 60  # last 60 sec me pattern check
 
         # UI will read these
         self.current_app_exe = None
@@ -223,27 +252,44 @@ class NagsterAgent:
             except Exception:
                 key_name = "unknown"
 
+            # same key streak
             if key_name == self.last_key:
                 self.same_key_streak += 1
             else:
                 self.last_key = key_name
                 self.same_key_streak = 1
 
+            # basic suspicious: bohot zyada same key spam
             if self.same_key_streak > self.suspicious_threshold:
                 self.suspicious_count += 1
+                self.session_suspicious_count += 1
                 self.same_key_streak = 0
+
+            # key timings list (for uniform timing)
+            self.key_times.append(now)
+            cut_off = now - self.key_times_window_sec
+            self.key_times = [t for t in self.key_times if t >= cut_off]
+
+            # advanced fake activity detection
+            self.check_fake_activity(now, key_name)
 
     def on_mouse_move(self, x, y):
         with self.lock:
-            self.last_activity_ts = time.time()
+            now = time.time()
+            self.last_activity_ts = now
+            self.last_mouse_move_ts = now
 
     def on_mouse_click(self, x, y, button, pressed):
         with self.lock:
-            self.last_activity_ts = time.time()
+            now = time.time()
+            self.last_activity_ts = now
+            self.last_mouse_move_ts = now
 
     def on_mouse_scroll(self, x, y, dx, dy):
         with self.lock:
-            self.last_activity_ts = time.time()
+            now = time.time()
+            self.last_activity_ts = now
+            self.last_mouse_move_ts = now
 
     # -------------------------
     # Active window detection
@@ -251,12 +297,12 @@ class NagsterAgent:
 
     def get_active_window(self):
         if not win32gui or not win32process:
-            return None, None
+            return None, None, None
 
         try:
             hwnd = win32gui.GetForegroundWindow()
             if not hwnd:
-                return None, None
+                return None, None, None
 
             _, pid = win32process.GetWindowThreadProcessId(hwnd)
 
@@ -268,9 +314,9 @@ class NagsterAgent:
 
             title = win32gui.GetWindowText(hwnd)
 
-            return exe_name, title
+            return exe_name, title, hwnd
         except Exception:
-            return None, None
+            return None, None, None
 
     # -------------------------
     # Timer tick
@@ -289,9 +335,101 @@ class NagsterAgent:
                 self.idle_seconds += 1
                 self.total_idle_seconds += 1
 
-            exe, title = self.get_active_window()
+            exe, title, hwnd = self.get_active_window()
             self.current_app_exe = exe
             self.current_app_title = title
+
+            # window change tracking for fake detection
+            if hwnd is not None and hwnd != self.last_active_hwnd:
+                self.last_active_hwnd = hwnd
+                self.last_window_change_ts = now
+
+    # -------------------------
+    # Fake activity detection
+    # -------------------------
+
+    def check_fake_activity(self, now: float, key_name: str):
+        """
+        Condition:
+        - Simple key (space/esc/arrows)
+        - Same key streak high
+        - Mouse not moved for some time
+        - Window not changed for some time
+        - Key timings very uniform (macro-like)
+        """
+        # 1) sirf simple keys pe focus karo
+        if key_name not in SIMPLE_KEYS:
+            return
+
+        # 2) streak threshold (tune kar sakta hai)
+        if self.same_key_streak < 50:
+            return
+
+        no_mouse_for = now - self.last_mouse_move_ts
+        no_window_for = now - self.last_window_change_ts
+
+        # 3) mouse + window both freeze for at least 15 sec
+        if no_mouse_for < 15 or no_window_for < 15:
+            return
+
+        # 4) enough key timings
+        if len(self.key_times) < 10:
+            return
+
+        # 5) uniform timing check
+        deltas = [
+            self.key_times[i] - self.key_times[i - 1]
+            for i in range(1, len(self.key_times))
+        ]
+        avg = sum(deltas) / len(deltas)
+        try:
+            stddev = statistics.pstdev(deltas)
+        except Exception:
+            stddev = 0.0
+
+        # stddev bahut chhota + average reasonable ho
+        if stddev < 0.02 and avg > 0.05:  # means very uniform spam
+            print("[Nagster] Fake activity detected: uniform key spam, no mouse, no window change.")
+            # fake activity bhi suspicious hi hai
+            self.suspicious_count += 1
+            self.session_suspicious_count += 1
+            # auto logout trigger
+            self.trigger_logout(reason="fake_activity")
+
+    # -------------------------
+    # Logout (idle / fake / too many flags)
+    # -------------------------
+
+    def trigger_logout(self, reason: str):
+        print(f"[Nagster] Triggering logout due to: {reason}")
+        with self.lock:
+            self.backend_status = f"Logging out: {reason}"
+            self.running = False
+
+        # try to send a final log
+        try:
+            self.send_to_backend()
+        except Exception as e:
+            print("[Nagster] Final send during logout failed:", e)
+
+        # Session control according to config
+        action = self.config.get("logout_action", "lock")
+
+        try:
+            if action == "disconnect":
+                # RDP / remote session disconnect, apps running
+                print("[Nagster] Disconnecting remote session (tsdiscon)")
+                os.system("tsdiscon")
+            elif action == "logoff":
+                # Full user logoff
+                print("[Nagster] Logging off user (shutdown /l)")
+                os.system("shutdown /l")
+            else:
+                # Default: just lock
+                print("[Nagster] Locking workstation")
+                ctypes.windll.user32.LockWorkStation()
+        except Exception as e:
+            print("[Nagster] Session control command failed:", e)
 
     # -------------------------
     # Payload builder
@@ -314,7 +452,7 @@ class NagsterAgent:
             # reset only interval counters
             self.active_seconds = 0
             self.idle_seconds = 0
-            self.suspicious_count = 0
+            self.suspicious_count = 0  # interval counter reset
             self.same_key_streak = 0
 
             self.last_send_ts = time.time()
@@ -366,6 +504,7 @@ class NagsterAgent:
     def worker_loop(self):
         self.running = True
         interval = self.config["send_interval_seconds"]
+        idle_logout = self.config.get("idle_logout_seconds", 300)
 
         print("[Nagster] Worker started")
 
@@ -382,8 +521,27 @@ class NagsterAgent:
             while self.running:
                 self.tick_second()
                 now = time.time()
+
+                # idle logout check
+                with self.lock:
+                    idle_gap = now - self.last_activity_ts
+                    session_flags = self.session_suspicious_count
+
+                if idle_gap >= idle_logout:
+                    print("[Nagster] Auto logout due to idle for", int(idle_gap), "seconds")
+                    self.trigger_logout(reason="idle_timeout")
+                    break
+
+                # too many suspicious flags in this session
+                if session_flags > 3:
+                    print("[Nagster] Auto logout: suspicious flags >", 3)
+                    self.trigger_logout(reason="too_many_suspicious_flags")
+                    break
+
+                # send logs at interval
                 if now - self.last_send_ts >= interval:
                     self.send_to_backend()
+
                 time.sleep(1)
         finally:
             keyboard_listener.stop()
@@ -405,7 +563,9 @@ class NagsterUI:
         self.root = tk.Tk()
         self.root.title("Nagster Agent")
         self.root.geometry("380x260")
-        self.root.resizable(False, False)
+        # resize allow
+        self.root.resizable(True, True)
+        self.root.minsize(360, 240)
 
         self.root.protocol("WM_DELETE_WINDOW", self.on_close_attempt)
 
@@ -421,14 +581,18 @@ class NagsterUI:
         self.activity_label = tk.Label(
             self.root,
             text="Active (interval): 0s  |  Idle (interval): 0s",
-            font=("Segoe UI", 9)
+            font=("Segoe UI", 9),
+            wraplength=340,
+            justify="left",
         )
         self.activity_label.pack(pady=4)
 
         self.total_label = tk.Label(
             self.root,
             text="Total Active: 0s  |  Total Idle: 0s",
-            font=("Segoe UI", 9)
+            font=("Segoe UI", 9),
+            wraplength=340,
+            justify="left",
         )
         self.total_label.pack(pady=2)
 
@@ -453,6 +617,9 @@ class NagsterUI:
             pady=5
         )
         self.stop_button.pack(pady=4)
+
+        # resize pe wraplength adjust
+        self.root.bind("<Configure>", self.on_resize)
 
         self.worker_thread = threading.Thread(target=self.agent.worker_loop, daemon=True)
         self.worker_thread.start()
@@ -485,6 +652,13 @@ class NagsterUI:
         else:
             return f"{s}s"
 
+    def on_resize(self, event):
+        # sirf root window ke configure event pe handle
+        if event.widget is self.root:
+            new_width = max(event.width - 40, 240)
+            self.activity_label.config(wraplength=new_width)
+            self.total_label.config(wraplength=new_width)
+
     def update_ui(self):
         if self.agent.running:
             self.status_label.config(text="Agent Status: ACTIVE", fg="#0A8A25")
@@ -496,7 +670,8 @@ class NagsterUI:
             last_send = self.agent.last_send_time_str
             active = self.agent.active_seconds
             idle = self.agent.idle_seconds
-            suspicious = self.agent.suspicious_count
+            suspicious_interval = self.agent.suspicious_count
+            session_flags = self.agent.session_suspicious_count
             exe = self.agent.current_app_exe
             title = self.agent.current_app_title
             total_active = self.agent.total_active_seconds
@@ -506,7 +681,10 @@ class NagsterUI:
         self.last_send_label.config(text=f"Last log sent: {last_send}")
 
         self.activity_label.config(
-            text=f"Active (interval): {active}s  |  Idle (interval): {idle}s  |  Suspicious: {suspicious}"
+            text=(
+                f"Active (interval): {active}s  |  Idle (interval): {idle}s\n"
+                f"Suspicious (interval): {suspicious_interval}  |  Total flags: {session_flags}"
+            )
         )
 
         self.total_label.config(
