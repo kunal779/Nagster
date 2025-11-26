@@ -723,3 +723,4 @@ def get_activity_logs(employee_id: str, date_str: str | None = Query(None)):
         logs.append(log_item)
 
     return logs
+
