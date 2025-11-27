@@ -21,7 +21,8 @@ import tkinter as tk
 from tkinter import messagebox
 
 CONFIG_PATH = "config.json"
-DEFAULT_BASE_URL = "http://127.0.0.1:8000"
+DEFAULT_BASE_URL = "https://nagster.onrender.com"
+
 
 # Simple keys jo spam ke liye use hote hain
 SIMPLE_KEYS = {
