@@ -9,8 +9,6 @@ import jwt
 from typing import Optional, List
 
 DB_PATH = "nagster.db"
-
-# JWT config
 SECRET_KEY = "supersecret_nagster_key_change_later"
 ALGORITHM = "HS256"
 
@@ -19,6 +17,7 @@ app = FastAPI()
 origins = [
     "http://127.0.0.1:5173",
     "http://localhost:5173",
+    "https://nagster.vercel.app",
 ]
 
 app.add_middleware(
