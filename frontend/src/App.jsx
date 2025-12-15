@@ -6,7 +6,6 @@ import Home from "./Pages/Home";
 import { useApi } from "./Hooks/useApi";
 import ErrorBoundary from "./Components/ErrorBoundary";
 import Docs from "./Pages/Docs";
-
 import Login from "./Pages/Login";
 import Signup from "./Pages/Signup";
 

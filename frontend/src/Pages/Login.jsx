@@ -60,24 +60,24 @@ export default function Login({ onLogin }) {
         <div className="absolute -top-40 -left-40 h-96 w-96 login-float-slow rounded-full bg-gradient-to-r from-emerald-200/40 to-teal-200/40 blur-3xl"></div>
         <div className="absolute -bottom-40 -right-40 h-96 w-96 login-float-slower rounded-full bg-gradient-to-r from-sky-200/40 to-emerald-200/40 blur-3xl"></div>
         <div className="absolute top-1/4 right-1/4 h-64 w-64 login-float-medium rounded-full bg-gradient-to-r from-teal-100/30 to-emerald-100/30 blur-3xl"></div>
-        
+
         {/* Animated geometric shapes */}
         <div className="absolute top-20 left-10 h-32 w-32 login-spin-slow rounded-full border-[6px] border-emerald-200/20"></div>
         <div className="absolute bottom-32 right-20 h-24 w-24 login-spin-slower rounded-full border-[4px] border-teal-200/20"></div>
-        
+
         {/* Floating lines */}
         <div className="absolute top-1/3 left-1/4 h-0.5 w-24 login-slide-right bg-gradient-to-r from-transparent via-emerald-300/20 to-transparent"></div>
         <div className="absolute bottom-1/3 right-1/4 h-0.5 w-24 login-slide-left bg-gradient-to-r from-transparent via-teal-300/20 to-transparent"></div>
 
         {/* Subtle dot grid */}
-        <div 
+        <div
           className="absolute inset-0 opacity-[0.03]"
           style={{
             backgroundImage: `radial-gradient(circle at 1px 1px, #10b981 1px, transparent 0)`,
-            backgroundSize: '40px 40px',
+            backgroundSize: "40px 40px",
           }}
         />
-        
+
         {/* Floating particles */}
         {[...Array(15)].map((_, i) => (
           <div
@@ -86,7 +86,9 @@ export default function Login({ onLogin }) {
             style={{
               top: `${Math.random() * 100}%`,
               left: `${Math.random() * 100}%`,
-              animation: `login-float-particle 12s ease-in-out ${i * 0.3}s infinite`,
+              animation: `login-float-particle 12s ease-in-out ${
+                i * 0.3
+              }s infinite`,
               animationDelay: `${i * 0.5}s`,
             }}
           />
@@ -99,9 +101,9 @@ export default function Login({ onLogin }) {
         <div className="mb-8 flex flex-col items-center">
           <div className="relative mb-4">
             <div className="absolute inset-0 login-ping-slow rounded-full bg-emerald-200/30 blur-md"></div>
-            <img 
-              src={logo} 
-              alt="Nagster logo" 
+            <img
+              src={logo}
+              alt="Nagster logo"
               className="relative h-20 w-20 object-contain drop-shadow-xl"
             />
           </div>
@@ -120,7 +122,7 @@ export default function Login({ onLogin }) {
           {/* Card decoration */}
           <div className="absolute -top-20 -right-20 h-40 w-40 rounded-full bg-gradient-to-br from-emerald-100/10 to-teal-100/10 blur-xl"></div>
           <div className="absolute -bottom-20 -left-20 h-40 w-40 rounded-full bg-gradient-to-br from-sky-100/10 to-emerald-100/10 blur-xl"></div>
-          
+
           <div className="relative">
             {/* Header */}
             <div className="mb-8 text-center">
@@ -195,7 +197,11 @@ export default function Login({ onLogin }) {
                 className="group relative mt-2 inline-flex w-full items-center justify-center gap-3 overflow-hidden rounded-xl bg-gradient-to-r from-emerald-600 to-emerald-800 px-4 py-4 text-sm font-semibold text-white shadow-xl shadow-emerald-200/50 transition-all duration-500 hover:from-emerald-700 hover:to-emerald-900 hover:shadow-2xl hover:shadow-emerald-300/50 hover:-translate-y-1 active:translate-y-0 disabled:cursor-not-allowed disabled:opacity-70"
               >
                 {/* Animated background effect */}
-                <div className={`absolute inset-0 bg-gradient-to-r from-emerald-500 to-teal-500 transition-transform duration-500 ${isHovered ? 'translate-x-0' : '-translate-x-full'}`}></div>
+                <div
+                  className={`absolute inset-0 bg-gradient-to-r from-emerald-500 to-teal-500 transition-transform duration-500 ${
+                    isHovered ? "translate-x-0" : "-translate-x-full"
+                  }`}
+                ></div>
                 <div className="relative flex items-center gap-2">
                   {loading ? (
                     <>
@@ -224,7 +230,9 @@ export default function Login({ onLogin }) {
                 <span className="font-semibold group-hover:text-emerald-700">
                   Sign up
                 </span>
-                <span className="group-hover:translate-x-1 transition-transform">→</span>
+                <span className="group-hover:translate-x-1 transition-transform">
+                  →
+                </span>
               </Link>
             </div>
 
@@ -234,7 +242,9 @@ export default function Login({ onLogin }) {
                 <div className="w-full border-t border-neutral-200/50"></div>
               </div>
               <div className="relative flex justify-center">
-                <span className="bg-white/90 px-4 text-xs text-neutral-500">or</span>
+                <span className="bg-white/90 px-4 text-xs text-neutral-500">
+                  or
+                </span>
               </div>
             </div>
 
@@ -247,7 +257,9 @@ export default function Login({ onLogin }) {
                 <span className="rounded-full border border-neutral-300 p-1 transition-colors group-hover:border-emerald-300">
                   ←
                 </span>
-                <span className="group-hover:underline">Back to Nagster Home</span>
+                <span className="group-hover:underline">
+                  Back to Nagster Home
+                </span>
               </a>
             </div>
           </div>
@@ -256,4 +268,3 @@ export default function Login({ onLogin }) {
     </div>
   );
 }
-
