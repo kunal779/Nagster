@@ -3,20 +3,20 @@ import {
   FaBook, 
   FaChartLine,
   FaDesktop, 
-  FaShieldHalved, 
-  FaCircleQuestion,
-  FaGear,
+  FaShieldAlt,
+  FaQuestionCircle, 
+  FaCogs, 
   FaDownload,
   FaKey,
-  FaCircleCheck,
+  FaCheckCircle, 
   FaEye,
-  FaArrowsRotate, 
+  FaSync, 
   FaServer,
   FaUsers,
   FaDatabase,
   FaLock,
-  FaTriangleExclamation
-} from 'react-icons/fa6';
+  FaExclamationTriangle 
+} from 'react-icons/fa';
 
 const Docs = () => {
   const [activeSection, setActiveSection] = useState('overview');
