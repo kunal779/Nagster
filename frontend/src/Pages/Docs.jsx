@@ -1,27 +1,29 @@
 import React, { useState } from 'react';
 
-import { 
-  FaBook, 
+import {
+  FaBook,
+  FaCode,
+  FaServer,
+  FaDesktop,
+  FaShieldAlt,
   FaChartLine,
-  FaDesktop, 
-  FaShieldAlt, 
+  FaCheckCircle,
   FaQuestionCircle,
   FaCogs,
-  FaDownload,
-  FaKey,
-  FaTerminal,
+  FaDatabase,
+  FaLock,
+  FaUsers,
+  FaEye,
   FaClock,
   FaExclamationTriangle,
-  FaCheckCircle,
-  FaDesktop as FaDesktopIcon,
-  FaEye,
-  FaSync,
-  FaServer,
+  FaTerminal,
+  FaDownload,
+  FaKey,
+  FaGlobe,
   FaMobileAlt,
-  FaUsers,
-  FaDatabase,
-  FaLock
-} from 'react-icons/fa';
+  FaSync
+} from "react-icons/fa";
+
 
 const Docs = () => {
   const [activeSection, setActiveSection] = useState('overview');
@@ -112,8 +114,7 @@ const Docs = () => {
                     <div className="bg-white rounded-xl p-6 shadow-md border border-gray-200">
                       <div className="flex items-center gap-3 mb-4">
                         <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg bg-gradient-to-br from-emerald-600 to-emerald-800 flex items-center justify-center">
-                          <FaDesktopIcon className="text-white text-lg md:text-xl" />
-                        </div>
+                          <FaDesktop className="text-white text-lg md:text-xl" />                        </div>
                         <h3 className="text-xl font-bold text-gray-900">Nagster Agent</h3>
                       </div>
                       <p className="text-gray-700 mb-4 text-sm md:text-base">
@@ -175,7 +176,7 @@ const Docs = () => {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                       <div className="text-center">
                         <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-emerald-100 flex items-center justify-center mx-auto mb-3">
-                          <FaDesktopIcon className="text-emerald-600 text-xl md:text-2xl" />
+                          <FaDesktop className="text-emerald-600 text-xl md:text-2xl" />
                         </div>
                         <h4 className="font-semibold mb-2 text-sm md:text-base">Agent Collects Data</h4>
                         <p className="text-xs md:text-sm text-gray-700">Agent on employee system monitors activity</p>
