@@ -1,29 +1,22 @@
 import React, { useState } from 'react';
-
-import {
-  FaBook,
-  FaCode,
-  FaServer,
-  FaDesktop,
-  FaShieldAlt,
+import { 
+  FaBook, 
   FaChartLine,
-  FaCheckCircle,
-  FaQuestionCircle,
-  FaCogs,
-  FaDatabase,
-  FaLock,
-  FaUsers,
-  FaEye,
-  FaClock,
-  FaExclamationTriangle,
-  FaTerminal,
+  FaDesktop, 
+  FaShieldHalved, 
+  FaCircleQuestion,
+  FaGear, // Changed from FaCogs
   FaDownload,
   FaKey,
-  FaGlobe,
-  FaMobileAlt,
-  FaSync
-} from "react-icons/fa";
-
+  FaCircleCheck,
+  FaEye,
+  FaArrowsRotate, // Changed from FaSync
+  FaServer,
+  FaUsers,
+  FaDatabase,
+  FaLock,
+  FaTriangleExclamation
+} from 'react-icons/fa6';
 
 const Docs = () => {
   const [activeSection, setActiveSection] = useState('overview');
@@ -32,9 +25,26 @@ const Docs = () => {
     { id: 'overview', label: 'Overview', icon: <FaBook /> },
     { id: 'architecture', label: 'Architecture', icon: <FaChartLine /> },
     { id: 'agent', label: 'Agent Setup', icon: <FaDesktop /> },
-    { id: 'security', label: 'Security', icon: <FaShieldAlt /> },
-    { id: 'troubleshooting', label: 'FAQ', icon: <FaQuestionCircle /> }
+    { id: 'security', label: 'Security', icon: <FaShieldHalved /> },
+    { id: 'troubleshooting', label: 'FAQ', icon: <FaCircleQuestion /> }
   ];
+
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = '/agent.exe';
+    link.download = 'Nagster-Agent-Setup.exe';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
+  const handleSupport = () => {
+    window.location.href = 'mailto:support@nagster.com';
+  };
+
+  const handleTroubleshooting = () => {
+    window.open('/troubleshooting', '_blank');
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#f7f5ef] to-neutral-50 text-gray-900">
@@ -85,15 +95,15 @@ const Docs = () => {
               <div className="mt-8 pt-6 border-t border-gray-200">
                 <h4 className="text-sm font-semibold text-gray-900 mb-3">Quick Links</h4>
                 <div className="space-y-2">
-                  <a href="#" className="text-sm text-emerald-600 hover:text-emerald-700 flex items-center gap-2">
+                  <button onClick={handleDownload} className="text-sm text-emerald-600 hover:text-emerald-700 flex items-center gap-2">
                     <FaDownload /> Agent Download
-                  </a>
-                  <a href="#" className="text-sm text-emerald-600 hover:text-emerald-700 flex items-center gap-2">
-                    <FaShieldAlt /> Security Guide
-                  </a>
-                  <a href="#" className="text-sm text-emerald-600 hover:text-emerald-700 flex items-center gap-2">
-                    <FaQuestionCircle /> Support
-                  </a>
+                  </button>
+                  <button onClick={() => setActiveSection('security')} className="text-sm text-emerald-600 hover:text-emerald-700 flex items-center gap-2">
+                    <FaShieldHalved /> Security Guide
+                  </button>
+                  <button onClick={handleSupport} className="text-sm text-emerald-600 hover:text-emerald-700 flex items-center gap-2">
+                    <FaCircleQuestion /> Support
+                  </button>
                 </div>
               </div>
             </div>
@@ -114,7 +124,8 @@ const Docs = () => {
                     <div className="bg-white rounded-xl p-6 shadow-md border border-gray-200">
                       <div className="flex items-center gap-3 mb-4">
                         <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg bg-gradient-to-br from-emerald-600 to-emerald-800 flex items-center justify-center">
-                          <FaDesktop className="text-white text-lg md:text-xl" />                        </div>
+                          <FaDesktop className="text-white text-lg md:text-xl" />
+                        </div>
                         <h3 className="text-xl font-bold text-gray-900">Nagster Agent</h3>
                       </div>
                       <p className="text-gray-700 mb-4 text-sm md:text-base">
@@ -122,19 +133,19 @@ const Docs = () => {
                       </p>
                       <ul className="space-y-2 md:space-y-3">
                         <li className="flex items-center gap-2 text-sm md:text-base">
-                          <FaCheckCircle className="text-emerald-500 flex-shrink-0" />
+                          <FaCircleCheck className="text-emerald-500 flex-shrink-0" />
                           <span>Runs on employee workstation</span>
                         </li>
                         <li className="flex items-center gap-2 text-sm md:text-base">
-                          <FaCheckCircle className="text-emerald-500 flex-shrink-0" />
+                          <FaCircleCheck className="text-emerald-500 flex-shrink-0" />
                           <span>Tracks keyboard, mouse & app activity</span>
                         </li>
                         <li className="flex items-center gap-2 text-sm md:text-base">
-                          <FaCheckCircle className="text-emerald-500 flex-shrink-0" />
+                          <FaCircleCheck className="text-emerald-500 flex-shrink-0" />
                           <span>Detects idle & suspicious patterns</span>
                         </li>
                         <li className="flex items-center gap-2 text-sm md:text-base">
-                          <FaCheckCircle className="text-emerald-500 flex-shrink-0" />
+                          <FaCircleCheck className="text-emerald-500 flex-shrink-0" />
                           <span>Can trigger auto lock/logout</span>
                         </li>
                       </ul>
@@ -152,19 +163,19 @@ const Docs = () => {
                       </p>
                       <ul className="space-y-2 md:space-y-3">
                         <li className="flex items-center gap-2 text-sm md:text-base">
-                          <FaCheckCircle className="text-emerald-500 flex-shrink-0" />
+                          <FaCircleCheck className="text-emerald-500 flex-shrink-0" />
                           <span>Accessible to managers/HR</span>
                         </li>
                         <li className="flex items-center gap-2 text-sm md:text-base">
-                          <FaCheckCircle className="text-emerald-500 flex-shrink-0" />
+                          <FaCircleCheck className="text-emerald-500 flex-shrink-0" />
                           <span>Real-time activity monitoring</span>
                         </li>
                         <li className="flex items-center gap-2 text-sm md:text-base">
-                          <FaCheckCircle className="text-emerald-500 flex-shrink-0" />
+                          <FaCircleCheck className="text-emerald-500 flex-shrink-0" />
                           <span>Detailed analytics & reports</span>
                         </li>
                         <li className="flex items-center gap-2 text-sm md:text-base">
-                          <FaCheckCircle className="text-emerald-500 flex-shrink-0" />
+                          <FaCircleCheck className="text-emerald-500 flex-shrink-0" />
                           <span>Policy configuration</span>
                         </li>
                       </ul>
@@ -183,7 +194,7 @@ const Docs = () => {
                       </div>
                       <div className="text-center">
                         <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-emerald-100 flex items-center justify-center mx-auto mb-3">
-                          <FaSync className="text-emerald-600 text-xl md:text-2xl" />
+                          <FaArrowsRotate className="text-emerald-600 text-xl md:text-2xl" />
                         </div>
                         <h4 className="font-semibold mb-2 text-sm md:text-base">Data Syncs Securely</h4>
                         <p className="text-xs md:text-sm text-gray-700">Encrypted data sent to backend</p>
@@ -271,7 +282,7 @@ const Docs = () => {
                       <div className="flex items-center justify-between mb-4 overflow-x-auto">
                         <div className="text-center min-w-[80px]">
                           <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-emerald-100 flex items-center justify-center mx-auto mb-2">
-                            <FaDesktopIcon className="text-emerald-600" />
+                            <FaDesktop className="text-emerald-600" />
                           </div>
                           <span className="text-sm font-medium">Agent</span>
                         </div>
@@ -320,14 +331,7 @@ const Docs = () => {
                           <h4 className="font-semibold text-gray-900 mb-2">Step 1: Download Agent</h4>
                           <div className="flex items-center gap-4 mt-3 flex-wrap">
                             <button
-                              onClick={() => {
-                                const link = document.createElement('a');
-                                link.href = '/agent.exe';
-                                link.download = 'Nagster-Agent-Setup.exe';
-                                document.body.appendChild(link);
-                                link.click();
-                                document.body.removeChild(link);
-                              }}
+                              onClick={handleDownload}
                               className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition-colors"
                             >
                               <FaDownload />
@@ -372,7 +376,7 @@ const Docs = () => {
 
                     <div className="bg-gradient-to-r from-blue-50 to-white p-6 rounded-xl border border-blue-200 overflow-x-auto">
                       <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-                        <FaCogs className="text-blue-600" />
+                        <FaGear className="text-blue-600" /> {/* Changed from FaCogs */}
                         Configuration Options
                       </h3>
                       <table className="w-full border-collapse min-w-[600px]">
@@ -417,7 +421,7 @@ const Docs = () => {
               <div className="space-y-8">
                 <div className="bg-white rounded-2xl p-6 md:p-8 shadow-lg border border-gray-200">
                   <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 flex items-center gap-3">
-                    <FaShieldAlt className="text-emerald-600" />
+                    <FaShieldHalved className="text-emerald-600" />
                     Security & Privacy
                   </h2>
                   
@@ -432,19 +436,19 @@ const Docs = () => {
                           </div>
                           <ul className="space-y-2 text-gray-700">
                             <li className="flex items-center gap-2 text-sm md:text-base">
-                              <FaCheckCircle className="text-emerald-500 text-sm flex-shrink-0" />
+                              <FaCircleCheck className="text-emerald-500 text-sm flex-shrink-0" />
                               No keystroke content logging
                             </li>
                             <li className="flex items-center gap-2 text-sm md:text-base">
-                              <FaCheckCircle className="text-emerald-500 text-sm flex-shrink-0" />
+                              <FaCircleCheck className="text-emerald-500 text-sm flex-shrink-0" />
                               No screenshot capturing
                             </li>
                             <li className="flex items-center gap-2 text-sm md:text-base">
-                              <FaCheckCircle className="text-emerald-500 text-sm flex-shrink-0" />
+                              <FaCircleCheck className="text-emerald-500 text-sm flex-shrink-0" />
                               No clipboard monitoring
                             </li>
                             <li className="flex items-center gap-2 text-sm md:text-base">
-                              <FaCheckCircle className="text-emerald-500 text-sm flex-shrink-0" />
+                              <FaCircleCheck className="text-emerald-500 text-sm flex-shrink-0" />
                               No personal file access
                             </li>
                           </ul>
@@ -456,19 +460,19 @@ const Docs = () => {
                           </div>
                           <ul className="space-y-2 text-gray-700">
                             <li className="flex items-center gap-2 text-sm md:text-base">
-                              <FaCheckCircle className="text-emerald-500 text-sm flex-shrink-0" />
+                              <FaCircleCheck className="text-emerald-500 text-sm flex-shrink-0" />
                               Activity timing patterns
                             </li>
                             <li className="flex items-center gap-2 text-sm md:text-base">
-                              <FaCheckCircle className="text-emerald-500 text-sm flex-shrink-0" />
+                              <FaCircleCheck className="text-emerald-500 text-sm flex-shrink-0" />
                               Application names (not content)
                             </li>
                             <li className="flex items-center gap-2 text-sm md:text-base">
-                              <FaCheckCircle className="text-emerald-500 text-sm flex-shrink-0" />
+                              <FaCircleCheck className="text-emerald-500 text-sm flex-shrink-0" />
                               Active/idle status
                             </li>
                             <li className="flex items-center gap-2 text-sm md:text-base">
-                              <FaCheckCircle className="text-emerald-500 text-sm flex-shrink-0" />
+                              <FaCircleCheck className="text-emerald-500 text-sm flex-shrink-0" />
                               Suspicious pattern flags
                             </li>
                           </ul>
@@ -512,7 +516,7 @@ const Docs = () => {
               <div className="space-y-8">
                 <div className="bg-white rounded-2xl p-6 md:p-8 shadow-lg border border-gray-200">
                   <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 flex items-center gap-3">
-                    <FaQuestionCircle className="text-emerald-600" />
+                    <FaCircleQuestion className="text-emerald-600" />
                     Frequently Asked Questions
                   </h2>
                   
@@ -541,7 +545,7 @@ const Docs = () => {
                     ].map((faq, index) => (
                       <div key={index} className="bg-gradient-to-r from-emerald-50 to-white p-6 rounded-xl border border-emerald-200">
                         <h3 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
-                          <FaQuestionCircle className="text-emerald-600" />
+                          <FaCircleQuestion className="text-emerald-600" />
                           {faq.q}
                         </h3>
                         <p className="text-gray-700 pl-8 text-sm md:text-base">{faq.a}</p>
@@ -551,18 +555,18 @@ const Docs = () => {
 
                   <div className="mt-8 p-6 bg-gradient-to-r from-blue-50 to-white rounded-xl border border-blue-200">
                     <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-                      <FaExclamationTriangle className="text-blue-600" />
+                      <FaTriangleExclamation className="text-blue-600" />
                       Need More Help?
                     </h3>
                     <p className="text-gray-700 mb-4 text-sm md:text-base">
                       Can't find what you're looking for? Our support team is here to help.
                     </p>
                     <div className="flex items-center gap-4 flex-wrap">
-                      <button className="inline-flex items-center gap-2 px-4 py-2 md:px-6 md:py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm md:text-base">
-                        <FaQuestionCircle />
+                      <button onClick={handleSupport} className="inline-flex items-center gap-2 px-4 py-2 md:px-6 md:py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm md:text-base">
+                        <FaCircleQuestion />
                         Contact Support
                       </button>
-                      <button className="text-blue-600 hover:text-blue-700 text-sm md:text-base">
+                      <button onClick={handleTroubleshooting} className="text-blue-600 hover:text-blue-700 text-sm md:text-base">
                         View complete troubleshooting guide →
                       </button>
                     </div>
