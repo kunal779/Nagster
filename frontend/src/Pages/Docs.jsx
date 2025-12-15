@@ -5,12 +5,12 @@ import {
   FaDesktop, 
   FaShieldHalved, 
   FaCircleQuestion,
-  FaGear, // Changed from FaCogs
+  FaGear,
   FaDownload,
   FaKey,
   FaCircleCheck,
   FaEye,
-  FaArrowsRotate, // Changed from FaSync
+  FaArrowsRotate, 
   FaServer,
   FaUsers,
   FaDatabase,
