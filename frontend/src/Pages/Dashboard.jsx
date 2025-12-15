@@ -164,46 +164,46 @@ function Dashboard({ user, role, onLogout }) {
       style={{
         minHeight: "100vh",
         display: "flex",
-        background: "linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%)",
+        background: "linear-gradient(135deg, #0f172a 0%, #1e293b 100%)",
       }}
     >
       <Sidebar
         activePage={activePage}
         onChangePage={setActivePage}
         onLogout={onLogout}
+        theme="dark"
       />
 
       <div style={{ flex: 1, display: "flex", flexDirection: "column" }}>
         {/* Top bar */}
         <header
           style={{
-            background: "white",
-            padding: "16px 24px",
-            boxShadow: SHADOWS.sm,
-            borderBottom: `1px solid ${COLORS.gray[200]}`,
+            background: "rgba(15, 23, 42, 0.8)",
+            backdropFilter: "blur(12px)",
+            padding: "16px 32px",
+            borderBottom: "1px solid rgba(148, 163, 184, 0.2)",
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
             position: "sticky",
             top: 0,
             zIndex: 50,
-            backdropFilter: "blur(8px)",
           }}
         >
           <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
             <div
               style={{
-                width: 40,
-                height: 40,
-                background: primaryGradient,
+                width: 44,
+                height: 44,
+                background: "linear-gradient(135deg, #10b981 0%, #059669 100%)",
                 borderRadius: 12,
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
                 color: "white",
                 fontWeight: "bold",
-                fontSize: 20,
-                boxShadow: SHADOWS.md,
+                fontSize: 22,
+                boxShadow: "0 4px 20px rgba(16, 185, 129, 0.3)",
               }}
             >
               N
@@ -212,8 +212,8 @@ function Dashboard({ user, role, onLogout }) {
               <h2
                 style={{
                   margin: 0,
-                  fontSize: 20,
-                  color: COLORS.gray[900],
+                  fontSize: 22,
+                  color: "#f8fafc",
                   fontWeight: 700,
                   letterSpacing: "-0.025em",
                 }}
@@ -238,11 +238,13 @@ function Dashboard({ user, role, onLogout }) {
                 style={{
                   margin: 0,
                   fontSize: 13,
-                  color: COLORS.gray[500],
+                  color: "#94a3b8",
                 }}
               >
                 {user?.username} •{" "}
-                {role?.charAt(0).toUpperCase() + role?.slice(1)}
+                <span style={{ color: "#10b981", fontWeight: 500 }}>
+                  {role?.charAt(0).toUpperCase() + role?.slice(1)}
+                </span>
               </p>
             </div>
           </div>
@@ -254,16 +256,17 @@ function Dashboard({ user, role, onLogout }) {
                 value={date}
                 onChange={(e) => setDate(e.target.value)}
                 style={{
-                  padding: "10px 14px",
+                  padding: "12px 16px",
                   borderRadius: 10,
-                  border: `1px solid ${COLORS.gray[300]}`,
-                  background: "white",
-                  color: COLORS.gray[900],
+                  border: "1px solid rgba(148, 163, 184, 0.3)",
+                  background: "rgba(30, 41, 59, 0.7)",
+                  color: "#f1f5f9",
                   fontSize: 14,
                   fontWeight: 500,
                   cursor: "pointer",
                   outline: "none",
                   width: 160,
+                  backdropFilter: "blur(8px)",
                 }}
               />
             </div>
@@ -348,27 +351,34 @@ function DashboardHome({
   return (
     <>
       {/* Stats Overview */}
-      <div style={{ padding: "24px 24px 0" }}>
+      <div style={{ padding: "32px 32px 0" }}>
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
-            gap: 20,
-            marginBottom: 24,
+            gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
+            gap: 24,
+            marginBottom: 32,
           }}
         >
-          <StatCard label="Total Employees" value={stats.total} icon="👥" />
+          <StatCard 
+            label="Total Employees" 
+            value={stats.total} 
+            icon="👥"
+            theme="dark"
+          />
           <StatCard
             label="Active Now"
             value={stats.active}
-            valueColor={COLORS.success[600]}
+            valueColor="#10b981"
             icon="🟢"
+            theme="dark"
           />
           <StatCard
             label="Suspicious Flags"
             value={stats.suspicious}
-            valueColor={COLORS.error[600]}
+            valueColor="#ef4444"
             icon="🚩"
+            theme="dark"
           />
         </div>
       </div>
@@ -376,37 +386,38 @@ function DashboardHome({
       {/* Main layout */}
       <div
         style={{
-          padding: "0 24px 24px",
+          padding: "0 32px 32px",
           display: "grid",
-          gridTemplateColumns: "minmax(300px, 380px) 1fr",
-          gap: 24,
-          height: "calc(100vh - 180px)",
+          gridTemplateColumns: "minmax(320px, 400px) 1fr",
+          gap: 32,
+          height: "calc(100vh - 200px)",
         }}
       >
         {/* LEFT: employee list */}
         <div
           style={{
-            background: "white",
-            borderRadius: 16,
-            boxShadow: SHADOWS.md,
-            border: `1px solid ${COLORS.gray[200]}`,
+            background: "rgba(30, 41, 59, 0.7)",
+            backdropFilter: "blur(12px)",
+            borderRadius: 20,
+            border: "1px solid rgba(148, 163, 184, 0.2)",
             display: "flex",
             flexDirection: "column",
             overflow: "hidden",
+            boxShadow: "0 8px 32px rgba(0, 0, 0, 0.3)",
           }}
         >
           <div
             style={{
-              padding: "20px 20px 16px",
-              borderBottom: `1px solid ${COLORS.gray[200]}`,
-              background: COLORS.gray[50],
+              padding: "24px 24px 20px",
+              borderBottom: "1px solid rgba(148, 163, 184, 0.2)",
+              background: "rgba(15, 23, 42, 0.5)",
             }}
           >
             <h3
               style={{
                 margin: 0,
-                fontSize: 16,
-                color: COLORS.gray[900],
+                fontSize: 18,
+                color: "#f8fafc",
                 fontWeight: 600,
               }}
             >
@@ -414,13 +425,16 @@ function DashboardHome({
             </h3>
             <p
               style={{
-                margin: "4px 0 0",
-                fontSize: 13,
-                color: COLORS.gray[500],
+                margin: "6px 0 0",
+                fontSize: 14,
+                color: "#94a3b8",
               }}
             >
               {employees.length} employee
-              {employees.length !== 1 ? "s" : ""} found • {stats.active} active
+              {employees.length !== 1 ? "s" : ""} found •{" "}
+              <span style={{ color: "#10b981", fontWeight: 500 }}>
+                {stats.active} active
+              </span>
             </p>
           </div>
 
@@ -434,14 +448,14 @@ function DashboardHome({
             {loadingList ? (
               <div
                 style={{
-                  padding: 40,
+                  padding: 60,
                   textAlign: "center",
-                  color: COLORS.gray[500],
+                  color: "#94a3b8",
                   fontSize: 14,
                   display: "flex",
                   flexDirection: "column",
                   alignItems: "center",
-                  gap: 12,
+                  gap: 16,
                 }}
               >
                 <LoadingSpinner />
@@ -450,9 +464,9 @@ function DashboardHome({
             ) : listError ? (
               <div
                 style={{
-                  padding: 40,
+                  padding: 60,
                   textAlign: "center",
-                  color: COLORS.error[600],
+                  color: "#ef4444",
                   fontSize: 14,
                 }}
               >
@@ -461,9 +475,9 @@ function DashboardHome({
             ) : employees.length === 0 ? (
               <div
                 style={{
-                  padding: 40,
+                  padding: 60,
                   textAlign: "center",
-                  color: COLORS.gray[500],
+                  color: "#94a3b8",
                   fontSize: 14,
                 }}
               >
@@ -479,6 +493,7 @@ function DashboardHome({
                     isSelected={isSelected}
                     onClick={() => setSelectedId(emp.employee_id)}
                     onViewActivity={onViewActivityLogs}
+                    theme="dark"
                   />
                 );
               })
@@ -489,13 +504,14 @@ function DashboardHome({
         {/* RIGHT: summary */}
         <div
           style={{
-            background: "white",
-            borderRadius: 16,
-            boxShadow: SHADOWS.md,
-            border: `1px solid ${COLORS.gray[200]}`,
+            background: "rgba(30, 41, 59, 0.7)",
+            backdropFilter: "blur(12px)",
+            borderRadius: 20,
+            border: "1px solid rgba(148, 163, 184, 0.2)",
             display: "flex",
             flexDirection: "column",
             overflow: "hidden",
+            boxShadow: "0 8px 32px rgba(0, 0, 0, 0.3)",
           }}
         >
           {!selectedId ? (
@@ -503,18 +519,19 @@ function DashboardHome({
               icon="👥"
               title="Select an Employee"
               description="Choose an employee from the list to view detailed analytics and activity data."
+              theme="dark"
             />
           ) : loadingSummary ? (
             <div
               style={{
-                padding: 60,
+                padding: 80,
                 textAlign: "center",
-                color: COLORS.gray[500],
+                color: "#94a3b8",
                 fontSize: 14,
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
-                gap: 16,
+                gap: 20,
               }}
             >
               <LoadingSpinner />
@@ -525,6 +542,7 @@ function DashboardHome({
               icon="❌"
               title="Failed to Load Details"
               description="Unable to load employee details. Please try again."
+              theme="dark"
             />
           ) : summary ? (
             <SummaryView
@@ -533,12 +551,14 @@ function DashboardHome({
               onViewActivity={() =>
                 onViewActivityLogs(summary.employee_id)
               }
+              theme="dark"
             />
           ) : (
             <EmptyState
               icon="📊"
               title="No Data Available"
               description="No detailed information available for this employee on the selected date."
+              theme="dark"
             />
           )}
         </div>
