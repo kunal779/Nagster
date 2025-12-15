@@ -3,11 +3,9 @@
   "suspicious_key_threshold": 500,
   "no_mouse_window_seconds": 60,
   "log_active_app": true,
-
   "backend_url": "https://nagster.onrender.com",
   "send_interval_seconds": 60,
   "idle_mark_seconds": 60,
   "backend_base_url": "https://nagster.onrender.com",
-
   "remember_me": false
 }

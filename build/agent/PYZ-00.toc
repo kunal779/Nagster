@@ -29,6 +29,8 @@
   ('_threading_local',
    'C:\\Users\\ACER\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\_threading_local.py',
    'PYMODULE'),
+  ('agent_core', 'C:\\Users\\ACER\\Nagster\\agent_core.py', 'PYMODULE'),
+  ('agent_ui', 'C:\\Users\\ACER\\Nagster\\agent_ui.py', 'PYMODULE'),
   ('argparse',
    'C:\\Users\\ACER\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\argparse.py',
    'PYMODULE'),
