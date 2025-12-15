@@ -3,20 +3,20 @@ import {
   FaBook, 
   FaChartLine,
   FaDesktop, 
-  FaShieldAlt,
-  FaQuestionCircle, 
-  FaCogs, 
+  FaShieldHalved,  // ✅ v4 me yeh sahi hai
+  FaCircleQuestion,  // ✅ v4 me yeh sahi hai
+  FaGear,  // ✅ v4 me yeh sahi hai (FaCogs ki jagah)
   FaDownload,
   FaKey,
-  FaCheckCircle, 
+  FaCircleCheck,  // ✅ v4 me yeh sahi hai
   FaEye,
-  FaSync, 
+  FaArrowsRotate,  // ✅ v4 me yeh sahi hai (FaSync ki jagah)
   FaServer,
   FaUsers,
   FaDatabase,
   FaLock,
-  FaExclamationTriangle 
-} from 'react-icons/fa';
+  FaTriangleExclamation  // ✅ v4 me yeh sahi hai
+} from 'react-icons/fa6';  // ✅ CHANGED TO 'react-icons/fa6' for v4
 
 const Docs = () => {
   const [activeSection, setActiveSection] = useState('overview');
@@ -25,8 +25,8 @@ const Docs = () => {
     { id: 'overview', label: 'Overview', icon: <FaBook /> },
     { id: 'architecture', label: 'Architecture', icon: <FaChartLine /> },
     { id: 'agent', label: 'Agent Setup', icon: <FaDesktop /> },
-    { id: 'security', label: 'Security', icon: <FaShieldHalved /> },
-    { id: 'troubleshooting', label: 'FAQ', icon: <FaCircleQuestion /> }
+    { id: 'security', label: 'Security', icon: <FaShieldHalved /> },  // ✅ Changed
+    { id: 'troubleshooting', label: 'FAQ', icon: <FaCircleQuestion /> }  // ✅ Changed
   ];
 
   const handleDownload = () => {
@@ -99,10 +99,10 @@ const Docs = () => {
                     <FaDownload /> Agent Download
                   </button>
                   <button onClick={() => setActiveSection('security')} className="text-sm text-emerald-600 hover:text-emerald-700 flex items-center gap-2">
-                    <FaShieldHalved /> Security Guide
+                    <FaShieldHalved /> Security Guide  {/* ✅ Changed */}
                   </button>
                   <button onClick={handleSupport} className="text-sm text-emerald-600 hover:text-emerald-700 flex items-center gap-2">
-                    <FaCircleQuestion /> Support
+                    <FaCircleQuestion /> Support  {/* ✅ Changed */}
                   </button>
                 </div>
               </div>
@@ -133,19 +133,19 @@ const Docs = () => {
                       </p>
                       <ul className="space-y-2 md:space-y-3">
                         <li className="flex items-center gap-2 text-sm md:text-base">
-                          <FaCircleCheck className="text-emerald-500 flex-shrink-0" />
+                          <FaCircleCheck className="text-emerald-500 flex-shrink-0" />  {/* ✅ Changed */}
                           <span>Runs on employee workstation</span>
                         </li>
                         <li className="flex items-center gap-2 text-sm md:text-base">
-                          <FaCircleCheck className="text-emerald-500 flex-shrink-0" />
+                          <FaCircleCheck className="text-emerald-500 flex-shrink-0" />  {/* ✅ Changed */}
                           <span>Tracks keyboard, mouse & app activity</span>
                         </li>
                         <li className="flex items-center gap-2 text-sm md:text-base">
-                          <FaCircleCheck className="text-emerald-500 flex-shrink-0" />
+                          <FaCircleCheck className="text-emerald-500 flex-shrink-0" />  {/* ✅ Changed */}
                           <span>Detects idle & suspicious patterns</span>
                         </li>
                         <li className="flex items-center gap-2 text-sm md:text-base">
-                          <FaCircleCheck className="text-emerald-500 flex-shrink-0" />
+                          <FaCircleCheck className="text-emerald-500 flex-shrink-0" />  {/* ✅ Changed */}
                           <span>Can trigger auto lock/logout</span>
                         </li>
                       </ul>
@@ -163,19 +163,19 @@ const Docs = () => {
                       </p>
                       <ul className="space-y-2 md:space-y-3">
                         <li className="flex items-center gap-2 text-sm md:text-base">
-                          <FaCircleCheck className="text-emerald-500 flex-shrink-0" />
+                          <FaCircleCheck className="text-emerald-500 flex-shrink-0" />  {/* ✅ Changed */}
                           <span>Accessible to managers/HR</span>
                         </li>
                         <li className="flex items-center gap-2 text-sm md:text-base">
-                          <FaCircleCheck className="text-emerald-500 flex-shrink-0" />
+                          <FaCircleCheck className="text-emerald-500 flex-shrink-0" />  {/* ✅ Changed */}
                           <span>Real-time activity monitoring</span>
                         </li>
                         <li className="flex items-center gap-2 text-sm md:text-base">
-                          <FaCircleCheck className="text-emerald-500 flex-shrink-0" />
+                          <FaCircleCheck className="text-emerald-500 flex-shrink-0" />  {/* ✅ Changed */}
                           <span>Detailed analytics & reports</span>
                         </li>
                         <li className="flex items-center gap-2 text-sm md:text-base">
-                          <FaCircleCheck className="text-emerald-500 flex-shrink-0" />
+                          <FaCircleCheck className="text-emerald-500 flex-shrink-0" />  {/* ✅ Changed */}
                           <span>Policy configuration</span>
                         </li>
                       </ul>
@@ -194,7 +194,7 @@ const Docs = () => {
                       </div>
                       <div className="text-center">
                         <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-emerald-100 flex items-center justify-center mx-auto mb-3">
-                          <FaArrowsRotate className="text-emerald-600 text-xl md:text-2xl" />
+                          <FaArrowsRotate className="text-emerald-600 text-xl md:text-2xl" />  {/* ✅ Changed */}
                         </div>
                         <h4 className="font-semibold mb-2 text-sm md:text-base">Data Syncs Securely</h4>
                         <p className="text-xs md:text-sm text-gray-700">Encrypted data sent to backend</p>
@@ -376,7 +376,7 @@ const Docs = () => {
 
                     <div className="bg-gradient-to-r from-blue-50 to-white p-6 rounded-xl border border-blue-200 overflow-x-auto">
                       <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-                        <FaGear className="text-blue-600" /> {/* Changed from FaCogs */}
+                        <FaGear className="text-blue-600" />  {/* ✅ Changed */}
                         Configuration Options
                       </h3>
                       <table className="w-full border-collapse min-w-[600px]">
@@ -421,7 +421,7 @@ const Docs = () => {
               <div className="space-y-8">
                 <div className="bg-white rounded-2xl p-6 md:p-8 shadow-lg border border-gray-200">
                   <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 flex items-center gap-3">
-                    <FaShieldHalved className="text-emerald-600" />
+                    <FaShieldHalved className="text-emerald-600" />  {/* ✅ Changed */}
                     Security & Privacy
                   </h2>
                   
@@ -436,19 +436,19 @@ const Docs = () => {
                           </div>
                           <ul className="space-y-2 text-gray-700">
                             <li className="flex items-center gap-2 text-sm md:text-base">
-                              <FaCircleCheck className="text-emerald-500 text-sm flex-shrink-0" />
+                              <FaCircleCheck className="text-emerald-500 text-sm flex-shrink-0" />  {/* ✅ Changed */}
                               No keystroke content logging
                             </li>
                             <li className="flex items-center gap-2 text-sm md:text-base">
-                              <FaCircleCheck className="text-emerald-500 text-sm flex-shrink-0" />
+                              <FaCircleCheck className="text-emerald-500 text-sm flex-shrink-0" />  {/* ✅ Changed */}
                               No screenshot capturing
                             </li>
                             <li className="flex items-center gap-2 text-sm md:text-base">
-                              <FaCircleCheck className="text-emerald-500 text-sm flex-shrink-0" />
+                              <FaCircleCheck className="text-emerald-500 text-sm flex-shrink-0" />  {/* ✅ Changed */}
                               No clipboard monitoring
                             </li>
                             <li className="flex items-center gap-2 text-sm md:text-base">
-                              <FaCircleCheck className="text-emerald-500 text-sm flex-shrink-0" />
+                              <FaCircleCheck className="text-emerald-500 text-sm flex-shrink-0" />  {/* ✅ Changed */}
                               No personal file access
                             </li>
                           </ul>
@@ -460,19 +460,19 @@ const Docs = () => {
                           </div>
                           <ul className="space-y-2 text-gray-700">
                             <li className="flex items-center gap-2 text-sm md:text-base">
-                              <FaCircleCheck className="text-emerald-500 text-sm flex-shrink-0" />
+                              <FaCircleCheck className="text-emerald-500 text-sm flex-shrink-0" />  {/* ✅ Changed */}
                               Activity timing patterns
                             </li>
                             <li className="flex items-center gap-2 text-sm md:text-base">
-                              <FaCircleCheck className="text-emerald-500 text-sm flex-shrink-0" />
+                              <FaCircleCheck className="text-emerald-500 text-sm flex-shrink-0" />  {/* ✅ Changed */}
                               Application names (not content)
                             </li>
                             <li className="flex items-center gap-2 text-sm md:text-base">
-                              <FaCircleCheck className="text-emerald-500 text-sm flex-shrink-0" />
+                              <FaCircleCheck className="text-emerald-500 text-sm flex-shrink-0" />  {/* ✅ Changed */}
                               Active/idle status
                             </li>
                             <li className="flex items-center gap-2 text-sm md:text-base">
-                              <FaCircleCheck className="text-emerald-500 text-sm flex-shrink-0" />
+                              <FaCircleCheck className="text-emerald-500 text-sm flex-shrink-0" />  {/* ✅ Changed */}
                               Suspicious pattern flags
                             </li>
                           </ul>
@@ -516,7 +516,7 @@ const Docs = () => {
               <div className="space-y-8">
                 <div className="bg-white rounded-2xl p-6 md:p-8 shadow-lg border border-gray-200">
                   <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 flex items-center gap-3">
-                    <FaCircleQuestion className="text-emerald-600" />
+                    <FaCircleQuestion className="text-emerald-600" />  {/* ✅ Changed */}
                     Frequently Asked Questions
                   </h2>
                   
@@ -545,7 +545,7 @@ const Docs = () => {
                     ].map((faq, index) => (
                       <div key={index} className="bg-gradient-to-r from-emerald-50 to-white p-6 rounded-xl border border-emerald-200">
                         <h3 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
-                          <FaCircleQuestion className="text-emerald-600" />
+                          <FaCircleQuestion className="text-emerald-600" />  {/* ✅ Changed */}
                           {faq.q}
                         </h3>
                         <p className="text-gray-700 pl-8 text-sm md:text-base">{faq.a}</p>
@@ -555,7 +555,7 @@ const Docs = () => {
 
                   <div className="mt-8 p-6 bg-gradient-to-r from-blue-50 to-white rounded-xl border border-blue-200">
                     <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-                      <FaTriangleExclamation className="text-blue-600" />
+                      <FaTriangleExclamation className="text-blue-600" />  {/* ✅ Changed */}
                       Need More Help?
                     </h3>
                     <p className="text-gray-700 mb-4 text-sm md:text-base">
@@ -563,7 +563,7 @@ const Docs = () => {
                     </p>
                     <div className="flex items-center gap-4 flex-wrap">
                       <button onClick={handleSupport} className="inline-flex items-center gap-2 px-4 py-2 md:px-6 md:py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm md:text-base">
-                        <FaCircleQuestion />
+                        <FaCircleQuestion />  {/* ✅ Changed */}
                         Contact Support
                       </button>
                       <button onClick={handleTroubleshooting} className="text-blue-600 hover:text-blue-700 text-sm md:text-base">
