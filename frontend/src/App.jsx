@@ -28,7 +28,7 @@ function App() {
     setUser(null);
     localStorage.removeItem("nagster_token");
     localStorage.removeItem("nagster_role");
-    navigate("/");
+    navigate("/admin");
   }, [navigate]);
 
   // 🔐 Load user on refresh using token
