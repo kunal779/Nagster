@@ -12,6 +12,8 @@ export function useApi() {
     setError(null);
 
     try {
+      console.log("🌐 API Call:", `${BACKEND_URL}${endpoint}`);
+      
       const response = await fetch(`${BACKEND_URL}${endpoint}`, {
         headers: {
           "Content-Type": "application/json",
@@ -20,6 +22,8 @@ export function useApi() {
         ...options,
       });
 
+      console.log("📊 Response Status:", response.status);
+
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
@@ -27,6 +31,7 @@ export function useApi() {
       const data = await response.json();
       return data;
     } catch (err) {
+      console.error("💥 API Error:", err.message);
       setError(err.message || "An unexpected error occurred");
       throw err;
     } finally {

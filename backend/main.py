@@ -1,4 +1,4 @@
-from fastapi import FastAPI, Query, HTTPException
+from fastapi import FastAPI, Query, HTTPException, Header  
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from datetime import datetime, date
@@ -18,6 +18,7 @@ origins = [
     "http://127.0.0.1:5173",
     "http://localhost:5173",
     "https://nagster.vercel.app",
+    
 ]
 
 app.add_middleware(
@@ -219,7 +220,15 @@ def login(user: UserLogin):
 
 
 @app.get("/auth/me")
-def me(token: str):
+def me(token: str = None, authorization: str = Header(None)):
+    # ✅ Option 1: Check header first
+    if authorization and authorization.startswith("Bearer "):
+        token = authorization.split("Bearer ")[1]
+    
+    # ✅ Option 2: Query parameter (backward compatibility)
+    elif not token:
+        raise HTTPException(status_code=401, detail="Token missing")
+    
     try:
         payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
     except Exception:
